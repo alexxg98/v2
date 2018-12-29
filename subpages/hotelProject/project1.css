@@ -1,0 +1,177 @@
+body{
+  background-image: url(images/hotelImg.jpg);
+}
+img{
+  width: 100%;
+  height: auto;
+}
+
+#title{
+  font-size: 1.7em;
+  font-weight: bolder;
+  color: black;
+  padding: 0.3em;
+  text-align: center;
+  background-color: white;
+  width: 30%;
+  margin: auto;
+}
+
+h1{
+  font-size: 2em;
+  text-align: center;
+  color: white;
+  background-color: black;
+  padding: 0.5em;
+}
+
+h3{
+  color: red;
+  text-align: right;
+  width: auto;
+  height: auto;
+  padding: 0.5em;
+}
+
+#date{
+  font-size: 1.2em;
+  font-weight: bolder;
+  color: Green;
+  padding: 1em;
+  text-align: right;
+  background-color: white;
+  width: auto;
+  float: right;
+}
+
+#sakura, #plumeria, #water, #orchid{
+  margin: auto;
+  text-align: center;
+  font-size: 2em;
+  background: white;
+  color: black;
+  width: 55%;
+  line-height: 1.2em;
+  top: 0;
+  box-sizing: border-box;
+  padding: 1em;
+  margin-bottom: 1em;
+}
+
+#sakImg{
+  width: 30em;
+  height: 25em;
+  margin: auto;
+  box-sizing: border-box;
+}
+
+#one, #two, #three, #four{
+  width: 100%;
+  height: 50em;
+  background-color: #9d738f;
+  margin-bottom: 2em;
+  padding-top: 2em;
+}
+
+
+
+/*Load event*/
+#msgNote{
+  margin: auto;
+  background-color: gray;
+  color: red;
+  width: 20em;
+  height: auto;
+  text-align: center;
+  padding: 1em;
+  font-size: 3em;
+}
+#note{
+  position: fixed;
+  width: 100%;
+  height: auto;
+  top: 1em;
+}
+#close{
+  font-size: 1.2em;
+  background-color: gray;
+  color: white;
+  float: right;
+  margin-right: 10em;
+}
+
+/*scroll event*/
+#upImg{
+  width: 3em;
+  height: 3em;
+  float: right;
+  bottom: auto;
+  position: relative;
+}
+
+#topButton {
+    display: none;
+    position: fixed;
+    bottom: 1em;;
+    right: 30px;
+    padding: 1em;
+}
+
+#topButton:hover {
+    background-color: #555; /* Add a dark-grey background on hover */
+}
+
+/*click event*/
+#reserve1, #reserve2, #reserve3, #reserve4{
+  background-color: #272526;
+  border-radius: 0.5em 0.5em 0.5em 0.5em;
+  font-size: 2em;
+  color: white;
+  height: 2.5em;
+  width: 27%;
+  padding: 0.5em;
+  box-sizing: border-box;
+  margin: auto;
+  text-align: center;
+}
+#reserve1:hover, #reserve1:focus, #reserve2:hover, #reserve2:focus, #reserve3:hover, #reserve3:focus, #reserve4:hover, #reserve4:focus    {
+    text-decoration: none;
+    cursor: pointer;
+    box-shadow: 0.2em 0.2em black;
+}
+
+.modal{
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    padding-top: 40px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    margin: auto;
+}
+
+/* Modal Content */
+.modal-content {
+    background-color: #fff2f4;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid black;
+    width: 75%;
+}
+
+/* The Close Button */
+.close1, .close2, .close3, .close4 {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close1:hover, .close1:focus, .close2:hover, .close2:focus, .close3:hover, .close3:focus, .close4:hover, .close4:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}

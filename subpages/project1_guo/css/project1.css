@@ -1,0 +1,239 @@
+body{
+  background-color: #D8F6EC;
+}
+
+img{
+  width: 100%;
+  height: 100%;
+}
+
+/* Navigation Bar Links */
+a:hover{
+  font-size: 1.2em;
+  color: green;
+}
+a:visited{
+  color:#E1710F;
+  font-weight: bolder;
+}
+a{
+  text-decoration: none;
+  color: blue;
+  line-height: 1.5em;
+}
+
+/* Constant Elements */
+.header{
+  background-color: #7AF882;
+  color: black;
+  width: 100%;
+  height: 4em;
+  text-align: left;
+  padding-left: 25%;
+  padding-top: 0.05em;
+  box-sizing: border-box;
+  margin-bottom: 1em;
+  font-size: 3em;
+  margin-top: -1em;
+  text-shadow: 5px 5px 5px black;
+
+}
+
+.header1{
+  background-color: #72BB9D;
+  color: black;
+  width: 19%;
+  height: 4em;
+  text-align: left;
+  box-sizing: border-box;
+  top: 0;
+  left: 0;
+  position: absolute;
+  padding-left: 1em;
+  float: left;
+}
+
+.subTitle{
+  font-size: 2em;
+  background-color: #7AF882;
+  text-align: center;
+  width: 81%;
+  float: right;
+  top: 0.5em;
+  padding-top: 0.1em;
+  right: 0;
+  position: absolute;
+  font-family: OCR A Std, monospace;
+}
+
+.navigation1{
+  width: 100%;
+  height: 2em;
+  font-size: 1em;
+  box-sizing: border-box;
+  float: right;
+  text-align: right;
+  margin-top: -3em;
+  margin-bottom: 2em;
+}
+
+#nav ul{
+  list-style-type: none;
+}
+#nav li{
+  display: inline;
+  margin: 1em;
+}
+
+.footer{
+  background-color: #72BB9D;
+  width: 100%;
+  text-align: center;
+  box-sizing: border-box;
+  height: 3em;
+  font-size: 1em;
+  position: absolute;
+  font-weight: bold;
+}
+
+#p1{
+  font-size: 2em;
+  padding-left: 1em;
+  margin-top: 3em;
+}
+
+/* Index Page */
+.group{
+  height: 35em;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.navigation{
+  height: 5em;
+  width: 30%;
+  float: left;
+  box-sizing: border-box;
+  margin-left: 2em;
+  font-size: 2em;
+  line-height: 2em;
+}
+
+.sum{
+  border: inset #A9CCE3;
+  padding: 0.3em;
+  box-shadow: 0.5em 0.5em 0.5em #A9CCE3;
+  font-size: 0.8em;
+  height: 12em;
+}
+
+.animation{
+  width: 5em;
+  height: 3em;
+  animation: fish 20s linear infinite;
+  margin-bottom: 1em;
+  margin-top: 2em;
+}
+
+@keyframes fish {
+  from{transform: translateX(0em);}
+  to{transform: translateX(100em);}
+}
+
+#content{
+  position: relative;
+  width: 60%;
+  height: 35em;
+  float: right;
+  padding-right: 3em;
+}
+
+#info{
+  background-color: rgba(0,0,0,0.5);
+  color: white;
+  font-family: serif;
+  top: 0;
+  position: absolute;
+  opacity: 0;
+  transition: 1s ease;
+  font-weight: 300;
+  height: 17em;
+  width: 91%;
+  float: right;
+  box-sizing: border-box;
+  margin-right: 1em;
+  padding: 1em;
+  font-size: 2em;
+  line-height: 2em;
+}
+
+#content:hover #info{
+  opacity: 1;}
+
+/* The Overview Page */
+
+/* The Causes Page */
+table{
+  margin-top: 2em;
+  font-size: 1.1em;
+  margin-bottom: 5em;
+  line-height: 2em;
+  box-shadow: 0.5em 0.5em 0.5em #1F618D;
+}
+
+ul{
+  list-style-type: none;
+  padding-right: 1em;
+}
+#causeList li::before{
+  content: '\261B';
+  color: red;
+  display: inline;
+  margin: 1em;
+}
+
+/* The Solutions Page */
+#sol{
+  width: 95%;
+  height: 20em;
+  margin-left: 1.5em;
+  position: relative;
+}
+
+#read{
+width: 25%;
+height: 2em;
+text-align: center;
+background-color: black;
+color: white;
+margin-left: 40%;
+margin-top: 2em;
+margin-bottom: 1em;
+}
+#read:hover{
+  background-color: #69A6CC;
+  border: none;
+  box-shadow: 0.5em 0.5em 0.5em #D79DED;
+  color: white;
+}
+
+
+#solText{
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,205,0.2);
+  color: white;
+  text-align: center;
+  font-size: 2em;
+  padding-top: 2em;
+  box-sizing: border-box;
+  font-family: serif;
+  top: 0;
+  position: absolute;
+  opacity: 0;
+  transition: 1s ease;
+  font-weight: 300;
+}
+
+#sol:hover #solText{
+  opacity: 1;}

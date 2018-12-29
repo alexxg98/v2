@@ -1,12 +1,10 @@
-@media screen and (max-width:1370px) {
-.wholePage{
+#wholePage{
   margin: 0;
   position: absolute;
   box-sizing: border-box;
   top: 0;
-  left: 11em;
   right: 0;
-  width: 87%;
+  width: 86vw;
   float: right;
 }
 
@@ -19,6 +17,7 @@
   width: 10em;
   border-radius: 3em 3em 3em 3em;
   box-shadow: 0.3em 0.3em 0.3em #a65973;
+  margin-bottom: 2em;
 }
 
 img{
@@ -27,17 +26,15 @@ img{
 }
 
 /*Index Page*/
-.index{
+#index{
   box-sizing: border-box;
-  margin: 0;
-  height: 45em;
   background-color: #321b22;
 }
 
 #logo{
   position: relative;
   padding-top: 10em;
-  height: 20em;
+  height: 30em;
   width: 30%;
   margin: auto;
 }
@@ -72,8 +69,7 @@ img{
   box-sizing: border-box;
   background-color: #eae1e6;
   height: 25em;
-  width: 100%;
-  padding-left: 1em;
+  padding-left: 4em;
   padding-top: 1em;
 }
 
@@ -82,45 +78,38 @@ img{
   line-height: 1.5em;
 }
 
+#classList:hover{
+  font-size: 0.67em;
+  box-shadow: 0em 0em 0em;
+}
+
 /*Skills Page*/
 #skills{
   background-color: #321b22;
   color: white;
-  padding: 1em;
+  padding-top: 1em;
   padding-bottom: 3em;
+  padding-left: 3em;
+  line-height: 3.5em;
 }
 
 #skillText{
   font-size: 1.5em;
 }
-#skillText li::before{
-  line-height: 2em;
-  content: '\02E7';
-  text-decoration: none;
-  display: inline;
-  margin: 1em;
-}
+
 #skillText ul{
   list-style: none;
 }
 
-.progressBar{
-	height: 0.5em;
-	position: relative;
-	background: gray;
-  width: 50%;
-	border-radius: 25px;
-  margin-left: 2.5em;
+#resume{
+  float: right;
+  margin-right: 1.5em;
+  margin-top: -4.5em;
 }
-.progressBar > span {
-  display: block;
-  height: 100%;
-  background-color: purple;
-  position: relative;
-  overflow: hidden;
-  width: 50%;
+#resume:hover{
+  box-shadow: 0.2em 0.2em 0.1em #a65973;
+  font-size: 1.1em;
 }
-
 
 /*Projects Page*/
 /*
@@ -134,13 +123,17 @@ img{
   box-sizing: border-box;
   background-color: #eae1e6;
   height: 40em;
-  width: 100%;
-  padding-left: 1em;
+  padding-left: 4em;
   padding-right: 1em;
   color: black;
   padding-top: 1em;
 }
 #proj1{
+  margin-top: 1em;
+  width: 100%;
+  margin-bottom: 1em;
+}
+#hotelProj{
   margin-top: 1em;
   width: 100%;
   margin-bottom: 1em;
@@ -163,29 +156,29 @@ table{
   box-shadow: 0.5em 0.5em 0.5em gray;
 }
 
-.codeHTML{
-  background-color: black;
+#codeHTML{
   box-shadow: 0.18em 0.18em 0.1em gray;
   font-size: 0.6em;
   color: white;
-  width: 12%;
-  height: 1em;
   margin: left;
   float: left;
   padding: 0.5em;
-  border-radius: 0.5em 0.5em 0.5em 0.5em;
 }
-.codeCSS{
-  background-color: black;
+#codeCSS{
   box-shadow: 0.18em 0.18em 0.1em gray;
   font-size: 0.6em;
   color: white;
-  width: 12%;
-  height: 1em;
   float: left;
   margin-left: 3%;
   padding: 0.5em;
-  border-radius: 0.5em 0.5em 0.5em 0.5em;
+}
+#codeJavascript{
+  box-shadow: 0.18em 0.18em 0.1em gray;
+  font-size: 0.6em;
+  color: white;
+  float: left;
+  margin-left: 3%;
+  padding: 0.5em;
 }
 
 
@@ -193,58 +186,35 @@ table{
 #contact{
   box-sizing: border-box;
   background-color: #321b22;
-  height: 27em;
-  width: 100%;
+  height: 98vh;
   color: white;
-  padding-left: 2em;
+  padding-left: 4em;
   padding-top: 1em;
 }
 
-#contactMe{
-  float: left;
-  padding-left: 0.5em;
-  font-size: 1.3em;
-  width: 40%;
+#linkedinIcon, #emailIcon{
+  width: 5em;
+  height: 5em;
 }
-
-#message{
-  height: 10em;
-  width: 35em;
+#linkedin, #email{
+  width: 8em;
+  height: auto;
+  margin-top: 2em;
+  margin-left: 1.5em;
 }
-input{
-  margin: 0.5em;
-}
-
-button{
-  color: darkblue;
-  background-color: gray;
-}
-
-button:hover{
-  background-color: black;
-  color: white;
-  box-shadow: 0.3em 0.3em 0.1em darkgray;
-  font-size: 1.5em;
-}
-
-#linkedin{
-  width: 2em;
-  height: 2em;
-}
-#icons{
-  float: right;
-  margin-right: 8em;
+#emailIcon:hover{
+  cursor: pointer;
 }
 
 /*Navigation Bar*/
 #logoNav{
-  width: 60%;
-  height: 5em;
+  width: 100%;
+  height: 10em;
   margin: auto;
   padding: 2em;
 }
 
-.navBar{
+#navBar{
   background-color: black;
   float: left;
   height: 150em;
@@ -253,14 +223,14 @@ button:hover{
   box-sizing: border-box;
   top: 0;
   left: 0;
-  line-height: 4.5em;
   list-style-type: none;
   padding: 0;
   margin: 0;
+  line-height: 3.5em;
 }
 
 #navLink{
-  font-size: 0.9em;
+  font-size: 0.8em;
 }
 
 #navLink li{
@@ -272,11 +242,11 @@ button:hover{
   color: #955067;
 }
 #navLink a:hover{
-  font-size: 1.2em;
+  font-size: 1em;
   color: #c18b9d;
 }
 #navLink a:visited:hover{
-  font-size: 1.2em;
+  font-size: 1.1em;
   color: #c18b9d;
 }
 #navLink a:visited{
@@ -284,324 +254,36 @@ button:hover{
 }
 
 
-.flower{
-  margin: auto;
-  width: 4em;
-  height: 4em;
-  animation: spin 30s infinite;
-  animation-play-state: paused;
-  margin-top: 20em;
-}
-
-.flower:hover{
-  animation-play-state: running;
-}
-
-@keyframes spin {
-  100%{transform: rotate(360deg);}
-}
-}
-
-
-
-@media screen and (min-width:1400px) {
-.wholePage{
-  margin: 0;
-  position: absolute;
-  box-sizing: border-box;
-  top: 0;
-  left: 11em;
-  right: 0;
-  width: 91%;
+/*Scroll Button*/
+#upImg{
+  width: 3em;
+  height: 3em;
   float: right;
-}
-
-#head{
-  margin: auto;
-  text-align: center;
-  border: groove black;
-  color: white;
-  background-color: black;
-  width: 10em;
-  border-radius: 3em 3em 3em 3em;
-  box-shadow: 0.3em 0.3em 0.3em #a65973;
-}
-
-img{
-  width: 100%;
-  height: 100%;
-}
-
-/*Index Page*/
-.index{
-  box-sizing: border-box;
-  margin: 0;
-  height: 60em;
-  background-color: #321b22;
-}
-
-#logo{
+  bottom: auto;
   position: relative;
-  padding-top: 15em;
-  height: 21em;
-  width: 25%;
-  margin: auto;
 }
 
-#introText{
-  color: white;
-  padding-left: 10%;
-  top: 13em;
-  position: absolute;
-  opacity: 0;
-  transition: 0.1s ease;
-  box-sizing: border-box;
-  height: 10em;
-  width: 200%;
-  margin: auto;
-  margin-left: -70%;
+#topButton {
+    position: fixed;
+    bottom: 1em;
+    right: 30px;
 }
 
-#name{
-  font-size: 5em;
-  text-shadow: 0.1em 0.05em 0.05em darkgray;
-}
-
-#logo:hover #introText{
-  opacity: 1;}
-#logo:hover #logoImage{
-  opacity: 0;}
-
-
-/*About Me Page*/
-#about{
-  box-sizing: border-box;
-  background-color: #eae1e6;
-  height: 25em;
-  width: 100%;
-  padding-left: 1em;
-  padding-top: 1em;
-}
-
-#aboutText{
-  font-size: 1.5em;
-  line-height: 1.5em;
-}
-
-/*Skills Page*/
-#skills{
-  background-color: #321b22;
-  color: white;
-  padding: 1em;
-  padding-bottom: 3em;
-}
-
-#skillText{
-  font-size: 1.5em;
-}
-#skillText li::before{
-  line-height: 2em;
-  content: '\02E7';
-  text-decoration: none;
-  display: inline;
-  margin: 1em;
-}
-#skillText ul{
-  list-style: none;
-}
-
-.progressBar{
-	height: 0.5em;
-	position: relative;
-	background: gray;
-  width: 50%;
-	border-radius: 25px;
-  margin-left: 2.5em;
-}
-.progressBar > span {
-  display: block;
-  height: 100%;
-  background-color: purple;
-  position: relative;
-  overflow: hidden;
-  width: 50%;
+#topButton:hover {
+  cursor: pointer;
+  width: 3.5em;
+  height: 3.5em;
 }
 
 
-/*Projects Page*/
-#download{
-  width: 1em;
-  height: 1em;
-}
-#projects{
-  box-sizing: border-box;
-  background-color: #eae1e6;
-  height: 50em;
-  width: 100%;
-  padding-left: 1em;
-  padding-right: 1em;
-  color: black;
-  padding-top: 1em;
-}
-#proj1{
-  margin-top: 2em;
-  width: 100%;
-  margin-bottom: 1em;
-}
-
-table{
-  width: 100%;
-  height: 5em;
-  padding: 1em;
-}
-
-#projText{
-  vertical-align: top;
-  font-size: 1.5em;
-}
-
-#projImg{
-  width: 100%;
-  height: 30em;
-  box-shadow: 0.5em 0.5em 0.5em gray;
-}
-
-.codeHTML{
-  background-color: black;
-  box-shadow: 0.18em 0.18em 0.1em gray;
-  font-size: 0.6em;
-  color: white;
-  width: 12%;
-  height: 1em;
-  margin: left;
-  float: left;
-  padding: 0.5em;
-  border-radius: 0.5em 0.5em 0.5em 0.5em;
-}
-.codeCSS{
-  background-color: black;
-  box-shadow: 0.18em 0.18em 0.1em gray;
-  font-size: 0.6em;
-  color: white;
-  width: 12%;
-  height: 1em;
-  float: left;
-  margin-left: 3%;
-  padding: 0.5em;
-  border-radius: 0.5em 0.5em 0.5em 0.5em;
-}
 
 
-/*Contact Me Page*/
-#contact{
-  box-sizing: border-box;
-  background-color: #321b22;
-  height: 28em;
-  width: 100%;
-  color: white;
-  padding-left: 2em;
-  padding-top: 1em;
-}
-
-#contactMe{
-  float: left;
-  padding-left: 1em;
-  font-size: 1.3em;
-}
-
-#message{
-  height: 10em;
-  width: 35em;
-}
-input{
-  margin: 0.5em;
-}
-
-button{
-  color: darkblue;
-  background-color: gray;
-}
-
-button:hover{
-  background-color: black;
-  color: white;
-  box-shadow: 0.3em 0.3em 0.1em darkgray;
-  font-size: 1.5em;
-}
-
-#linkedin{
-  width: 2em;
-  height: 2em;
-}
-#icons{
-  float: right;
-  padding-right: 5em;
-  margin-right: 10em;
-}
-
-/*Navigation Bar*/
-#logoNav{
-  width: 55%;
-  height: 5em;
-  margin: auto;
-  padding: 2.5em;
-}
-
-.navBar{
-  background-color: black;
-  float: left;
-  height: 150em;
-  width: 11em;
-  position: fixed;
-  box-sizing: border-box;
-  top: 0;
-  left: 0;
-  line-height: 4.5em;
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
-}
-
-#navLink{
-  font-size: 0.9em;
-}
-
-#navLink li{
-  text-indent: -0.9em;
-  font-size: 2em;
-  font-weight: bold;
-}
-#navLink a:link{
-  color: #955067;
-}
-#navLink a:hover{
-  font-size: 1.2em;
-  color: #c18b9d;
-}
-#navLink a:visited:hover{
-  font-size: 1.2em;
-  color: #c18b9d;
-}
-#navLink a:visited{
-  color: #e4cdd5;
-}
 
 
-.flower{
-  margin: auto;
-  width: 4em;
-  height: 4em;
-  animation: spin 20s infinite;
-  animation-play-state: paused;
-  margin-top: 20em;
-}
 
-.flower:hover{
-  animation-play-state: running;
-}
 
-@keyframes spin {
-  100%{transform: rotate(360deg);}
-}
 
+@media screen and (max-width:1150px) {
+#introText, #about, #skills, #projects, #contact{padding-left: 10em; height: auto
+}
 }
