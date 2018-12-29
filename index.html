@@ -1,5 +1,123 @@
-Hello world check out my homepage!
+<!DOCTYPE html>
+<html>
+  <head>
+    <title> Alexandria's Portfolio </title>
+    <link href="css/portfolio_guo.css" type="text/css" rel="stylesheet">
+  </head>
+  <body>
+    <div class="wholePage">
+      <div class="index">
+        <div id="logo">
+          <img src="images/logo.png" alt="logo" id="logoImage">
+        <div id="introText">
+          <h1 id="name"> Alexandria Guo </h1>
+          <p> I am an Aspiring proGrammer studying at the City College of New York </p>
+        </div>
+      </div>
+      </div>
+
+      <div id="about">
+        <div id="head">
+          <h2> About Me </h2>
+        </div>
+        <div id="aboutText">
+          <p> I am currently studying at The City College of New York,
+            with a passion for coding and design. As a sophomore, I am currently
+            in an art minor, while applying to declare my major as computer science. </p>
+
+          <p> Currently, I am taking Web Design in the CUNY TechWorks program in hopes
+            to advance my coding skills. </p>
+        </div>
+      </div>
+
+      <div id="skills">
+        <div id="head">
+          <h2> Skills </h2>
+        </div>
+        <div id="skillText">
+          <ul>
+            <li> HTML/CSS
+              <div class="progressBar">
+              <span style="width: 75%"></span>
+              </div>
+            </li>
+            <li> PHP
+              <div class="progressBar">
+              <span style="width: 25%"></span>
+              </div>
+            </li>
+            <li> Microsoft Office
+              <div class="progressBar">
+              <span style="width: 90%"></span>
+              </div>
+            </li>
+            <li> Google Suite
+              <div class="progressBar">
+              <span style="width: 90%"></span>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div id="projects">
+        <div id="head">
+          <h2> My Works </h2>
+        </div>
+        <div id="proj1">
+          <table>
+            <tr align="left">
+            <td scope="col" width=40% style="padding-right: 2em;" id="projText"> <h3> Informative Website |
+              <!--<a href="subpages/project1_guo" download="project1"> <img src="images/download.png" id="download"> </a>
+            --></h3>
+              <p> This is an informative website I made about dead zones. The site
+              includes one (1) index and three (3) subpages which are all linked.</p>
+              <div class="codeHTML"> HTML </div>
+              <div class="codeCSS"> CSS </div>
+            </td>
+            <th scope="col" id="projImg"> <a href="subpages/project1_guo/index.html" target="_blank">
+              <img src="images/proj1Index.jpg" alt="Project 1"> </a> </th> </tr>
+          </table>
+          </div>
+
+      </div>
+
+      <div id="contact">
+        <div id="icons">
+          <h2> Or Contact Me </h2>
+          <a href="https://www.linkedin.com/in/alexandria-guo-724374136/" target="_blank">
+            <img src="images/linkedin.jpg"id="linkedin"> </a>
+        </div>
+        <div id="contactMe">
+          <p> Wanna talk? Message me: </p>
+          <form action="php/contact.php" method="post">
+            <input type="text" name="fullName" placeholder="Enter your Name"/>
+            <br/>
+            <input type="text" name="email" placeholder="Enter your Email"/>
+            <br/>
+            <input type="text" name="subject" placeholder="Enter the Subject"/>
+            <br/>
+            <input type="text" name="message" placeholder="Enter your message (Max. 200 words)" max="200" id="message"/>
+            <br/>
+            <br/>
+            <button type="submit" name="submit"> Submit </button>
+          </form>
+          </div>
 
 
-----------------------------
-http://alexxg98.github.io
+      </div>
+    </div>
+
+    <div class="navBar">
+      <!--button to open bar-->
+        <img src="images/logoIn.png" alt="logo" id="logoNav">
+      <ul style="list-style-type: none" id="navLink">
+        <li> <a style="  text-decoration: none;" href="#about"> About Me </a> </li>
+        <li> <a style="  text-decoration: none;" href="#skills"> Skills </li>
+        <li> <a style="  text-decoration: none;" href="#projects"> My Works </li>
+        <li> <a style="  text-decoration: none;" href="#contact"> Contact </li>
+      </ul>
+      <div class="flower"> <img src="images/sakura.png" alt="sakura"> </div>
+    </div>
+  </body>
+</html>
