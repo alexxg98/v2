@@ -3,121 +3,230 @@
   <head>
     <title> Alexandria's Portfolio </title>
     <link href="css/index.css" type="text/css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
   </head>
   <body>
-    <div class="wholePage">
-      <div class="index">
-        <div id="logo">
-          <img src="images/logo.png" alt="logo" id="logoImage">
+<div id="wholePage" class="container-fluid" style='width:90vw;'>
+
+<!--Index Section-->
+    <div class="row " id="index" style="height: 100vh; width:90vw">
+      <div class="col-12" >
+      <div id="logo" >
+        <img src="images/logo.png" alt="logo" id="logoImage">
         <div id="introText">
           <h1 id="name"> Alexandria Guo </h1>
           <p> I am an Aspiring proGrammer studying at the City College of New York </p>
         </div>
       </div>
-      </div>
-
-      <div id="about">
-        <div id="head">
-          <h2> About Me </h2>
-        </div>
-        <div id="aboutText">
-          <p> I am currently studying at The City College of New York,
-            with a passion for coding and design. As a sophomore, I am currently
-            in an art minor, while applying to declare my major as computer science. </p>
-
-          <p> Currently, I am taking Web Design in the CUNY TechWorks program in hopes
-            to advance my coding skills. </p>
-        </div>
-      </div>
-
-      <div id="skills">
-        <div id="head">
-          <h2> Skills </h2>
-        </div>
-        <div id="skillText">
-          <ul>
-            <li> HTML/CSS
-              <div class="progressBar">
-              <span style="width: 75%"></span>
-              </div>
-            </li>
-            <li> PHP
-              <div class="progressBar">
-              <span style="width: 25%"></span>
-              </div>
-            </li>
-            <li> Microsoft Office
-              <div class="progressBar">
-              <span style="width: 90%"></span>
-              </div>
-            </li>
-            <li> Google Suite
-              <div class="progressBar">
-              <span style="width: 90%"></span>
-              </div>
-            </li>
-          </ul>
-        </div>
-      </div>
-
-      <div id="projects">
-        <div id="head">
-          <h2> My Works </h2>
-        </div>
-        <div id="proj1">
-          <table>
-            <tr align="left">
-            <td scope="col" width=40% style="padding-right: 2em;" id="projText"> <h3> Informative Website |
-              <!--<a href="subpages/project1_guo" download="project1"> <img src="images/download.png" id="download"> </a>
-            --></h3>
-              <p> This is an informative website I made about dead zones. The site
-              includes one (1) index and three (3) subpages which are all linked.</p>
-              <div class="codeHTML"> HTML </div>
-              <div class="codeCSS"> CSS </div>
-            </td>
-            <th scope="col" id="projImg"> <a href="subpages/project1_guo/index.html" target="_blank">
-              <img src="images/proj1Index.jpg" alt="Project 1"> </a> </th> </tr>
-          </table>
-          </div>
-
-      </div>
-
-      <div id="contact">
-        <div id="icons">
-          <h2> Or Contact Me </h2>
-          <a href="https://www.linkedin.com/in/alexandria-guo-724374136/" target="_blank">
-            <img src="images/linkedin.jpg"id="linkedin"> </a>
-        </div>
-        <div id="contactMe">
-          <p> Wanna talk? Message me: </p>
-          <form action="php/contact.php" method="post">
-            <input type="text" name="fullName" placeholder="Enter your Name"/>
-            <br/>
-            <input type="text" name="email" placeholder="Enter your Email"/>
-            <br/>
-            <input type="text" name="subject" placeholder="Enter the Subject"/>
-            <br/>
-            <input type="text" name="message" placeholder="Enter your message (Max. 200 words)" max="200" id="message"/>
-            <br/>
-            <br/>
-            <button type="submit" name="submit"> Submit </button>
-          </form>
-          </div>
-
-
-      </div>
+      </div> <!--close col-->
     </div>
+<!--End of Index Section-->
 
-    <div class="navBar">
-      <!--button to open bar-->
+
+<!--About Me Section-->
+    <div class="row" id="about" style="width:90vw;">
+      <div class="col-12">
+      <div id="head">
+        <h2> About Me </h2>
+      </div>
+      <div id="aboutText">
+        <p> I am currently studying at The City College of New York, with a passion for coding and design. As a junior, I am currently majoring in computer science with an
+          <a href="#contact" data-toggle="tooltip" title="Contact me for my portfolio"> art studio minor </a>. </p>
+        <p> Currently, I am taking Web Design in the <button id="classList" class="btn btn-light" data-toggle="collapse" data-target="#techworks"> CUNY TechWorks </button> program in hopes to advance my coding skills. </p>
+          <div id="techworks" class="collapse"> Courses taken in Queensborough Community College: <br/> Web Technology I: Building and Maintaining Web Sites <br/> Web Client Programming: JavaScript </div> <!--close div for accordian-->
+      </div>
+      </div> <!--close col-->
+    </div>
+<!--End of About Me Section-->
+
+
+<!--Skills Section-->
+    <div class="row" id="skills" style="width:90vw;">
+      <div class="col">
+      <div id="head">
+        <h2> Skills </h2>
+      </div>
+      <button id="resume" type="button" class="btn btn-dark" data-toggle="popover" data-trigger="hover" data-content="Click to view my resume"> <a href="Resume.pdf" target="_blank"> Resume </a> </button>
+      <div id="skillText">
+        <ul>
+          <li> HTML/CSS
+            <div class="progress" style="width:90%;">
+            <div class="progress-bar bg-danger" style="width:80%"></div>
+            </div>
+          </li>
+          <li> PHP
+            <div class="progress" style="width:90%;">
+            <div class="progress-bar bg-danger" style="width:25%"></div>
+            </div>
+          </li>
+          <li> JavaScript/JQuery
+            <div class="progress" style="width:90%;">
+            <div class="progress-bar bg-danger" style="width:60%"></div>
+            </div>
+          </li>
+          <li> Bootstrap
+            <div class="progress" style="width:90%;">
+            <div class="progress-bar bg-danger" style="width:70%"></div>
+            </div>
+          </li>
+          <li> Microsoft Office
+            <div class="progress" style="width:90%;">
+            <div class="progress-bar bg-danger" style="width:90%"></div>
+            </div>
+          </li>
+          <li> Google Suite
+            <div class="progress" style="width:90%;">
+            <div class="progress-bar bg-danger" style="width:90%"></div>
+            </div>
+          </li>
+        </ul>
+      </div> <!--close skillText-->
+      </div> <!--close col-->
+    </div>
+<!--End of Skills Section-->
+
+
+<!--Projects Section-->
+    <div class="row" id="projects" style="width:90vw;">
+      <div class="col">
+      <div id="head">
+        <h2> My Works </h2>
+      </div>
+      <div class="carousel" data-ride="carousel" id="carouselId">
+<!--Informative Project-->
+      <div id="proj1" class="carousel-item active">
+        <table>
+          <tr align="left">
+          <td scope="col" width=40% style="padding-right: 2em;" id="projText"> <h3> Informative Website |
+            <!--<a href="subpages/project1_guo" download="project1"> <img src="images/download.png" id="download"> </a>
+          --></h3>
+            <p> This is an informative website I made about dead zones. The site includes one (1) index and three (3) subpages which are all linked.</p>
+        <span id="codeHTML" class="badge badge-dark badge-pill"> HTML </span>
+        <span id="codeCSS" class="badge badge-dark badge-pill"> CSS </span>
+          </td>
+          <th scope="col" id="projImg"> <a href="subpages/project1_guo/index.html" target="_blank">
+            <img class="img-fluid" src="images/proj1Index.jpg" alt="Project 1"> </a> </th> </tr>
+        </table>
+      </div> <!--close proj1-->
+<!--Hotel Project-->
+      <div id="hotelProj" class="carousel-item">
+        <table>
+          <tr align="left">
+          <td scope="col" width=40% style="padding-right: 2em;" id="projText"> <h3> Hotel Availability | </h3>
+            <p> This website consists of 10 (ten) users that randomly selects 1 (one) out of the four (four) available hotels. Using the selctions, the program will update the information about each hotels' rooms booked and still available. </p>
+        <span id="codeHTML" class="badge badge-dark badge-pill"> HTML </span>
+        <span id="codeCSS" class="badge badge-dark badge-pill"> CSS </span>
+        <span id="codeJavascript" class="badge badge-dark badge-pill"> JavaScript </span>
+          </td>
+          <th scope="col" id="projImg"> <a href="subpages/hotelProject/project1a.html" target="_blank">
+            <img class="img-fluid" src="images/hotelProj.jpg" alt="Project 1"> </a> </th> </tr>
+        </table>
+      </div> <!--close hotelProj-->
+
+
+      <a class="carousel-control-prev" href="#carouselId" role="button" data-slide="prev"> <!--href to entire container of slideshow, not individual pics-->
+          <span class="carousel-control-prev-icon"> </span>
+      </a>
+      <a class="carousel-control-next" href="#carouselId" role="button" data-slide="next">
+          <span class="carousel-control-next-icon"> </span>
+      </a>
+      </div> <!--Close carousel-->
+      </div> <!--close col-->
+    </div>
+<!--End of Projects Section-->
+
+
+<!--Contact Section-->
+    <div class="row" id="contact" style="width:90vw;">
+      <div class="col">
+    <!--alert popup-->
+        <div class="alert alert-info">
+          <button type="button" class="close" data-dismiss="alert"> <span> &times; </span> </button>
+          <p> Have a question? Want to learn more about me? Want to see more of my works in or out of programming? Contact Me!</p>
+        </div> <!--End of alert-->
+      <div id="icons" class="card-columns">
+        <h2 style="text-align: center;"> Contact Me: </h2>
+        <section class="card bg-light" id="linkedin">
+          <div class="card-header text-dark">
+            <h5 class="card-title"> Linkedin </h5> </div>
+          <div class="card-body">
+            <a href="https://www.linkedin.com/in/alexandria-guo-724374136/" target="_blank">
+            <img class="card-img img-fluid" src="images/linkedin.jpg" id="linkedinIcon"> </a>
+          </div>
+        </section>
+        <section class="card bg-light" id="email">
+          <div class="card-header text-dark">
+            <h5 class="card-title"> Email </h5> </div>
+          <div class="card-body">
+  <!-- Button to Open the Modal -->
+<div data-toggle="modal" data-target="#myModal">
+    <img class="card-img img-fluid" src="images/mail.png" id="emailIcon"/>
+</div>
+
+<!-- The Modal -->
+  <div class="modal" id="myModal" style="width:50%; margin:auto; margin-top:3em;">
+    <div class="modal-content">
+
+      <!-- Modal Header -->
+      <div class="modal-header">
+        <h4 class="modal-title text-dark">Email me at...</h4>
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+      </div>
+
+      <!-- Modal body -->
+      <div class="modal-body text-dark">
+        lexieguo@gmail.com
+        <br/> OR <br/>
+        aguo001@citymail.cuny.edu
+      </div>
+
+    </div> <!--close modal content-->
+  </div> <!--close modal-->
+</div> <!--close card-->
+        </section>
+      </div> <!--close cards-->
+
+      </div> <!--close col-->
+    </div>
+<!--End of Contact Section-->
+
+    </div> <!--End of Content Section (#wholePage)-->
+
+<!--Navigation Bar-->
+    <div id="container">
+      <div class="row">
+      <nav class="col-sm-3" id="navBar">
+      <!--<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapseTab" aria-controls="collapseTab" aria-expanded="false">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="collapseTab">-->
         <img src="images/logoIn.png" alt="logo" id="logoNav">
-      <ul style="list-style-type: none" id="navLink">
-        <li> <a style="  text-decoration: none;" href="#about"> About Me </a> </li>
-        <li> <a style="  text-decoration: none;" href="#skills"> Skills </li>
-        <li> <a style="  text-decoration: none;" href="#projects"> My Works </li>
-        <li> <a style="  text-decoration: none;" href="#contact"> Contact </li>
+      <ul style="list-style-type: none;" id="navLink" class="nav flex-column pl-4">
+        <li class="nav-item"> <a style="text-decoration: none;" href="#about" class="nav-link active"> About Me </a> </li>
+        <li class="nav-item"> <a style="text-decoration: none;" href="#skills" class="nav-link"> Skills </a> </li>
+        <li class="nav-item"> <a style="text-decoration: none;" href="#projects" class="nav-link"> My Works </a> </li>
+        <li class="nav-item"> <a style="text-decoration: none;" href="#contact" class="nav-link"> Contact </a> </li>
       </ul>
-      <div class="flower"> <img src="images/sakura.png" alt="sakura"> </div>
-    </div>
+    <!--</div>-->
+    </nav>
+    </div> <!--close row-->
+    </div> <!--close container-->
+<!-- End of Navigation Bar-->
+
+<!--Scroll to top button-->
+  <div id="topButton">
+    <a href="#"><img src="images/upArrow.jpg" id="upImg"></a>
+  </div>
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+  <script src="js/portfolio_guo.js"> </script>
+
+
+
+
   </body>
 </html>
