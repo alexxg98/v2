@@ -88,6 +88,15 @@ img{
   font-size: 0.6em;
 }
 
+#education{
+  font-size: 0.85em;
+  color:#15317E;
+}
+#relevantCourses{
+  font-size: 0.82em;
+  color:#15317E;
+}
+
 /*Skills Page*/
 #skills{
   background-color: #321b22;
