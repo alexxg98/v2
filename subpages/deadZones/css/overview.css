@@ -1,0 +1,147 @@
+body{
+  background-color: #D8F6EC;
+}
+
+img{
+  width: 100%;
+  height: 100%;
+}
+
+a:hover{
+  font-size: 1.2em;
+  color: green;
+}
+a:visited{
+  color:#E1710F;
+  font-weight: bolder;
+}
+a{
+  text-decoration: none;
+  color: blue;
+  line-height: 1.5em;
+}
+
+.header{
+  background-color: #7AF882;
+  color: black;
+  width: 100%;
+  height: 4em;
+  text-align: left;
+  padding-left: 25%;
+  padding-top: 0.05em;
+  box-sizing: border-box;
+  margin-bottom: 1em;
+  font-size: 3em;
+  margin-top: -1em;
+  text-shadow: 5px 5px 5px black;
+
+}
+
+.header1{
+  background-color: #72BB9D;
+  color: black;
+  width: 19%;
+  height: 4em;
+  text-align: left;
+  box-sizing: border-box;
+  top: 0;
+  left: 0;
+  position: absolute;
+  padding-left: 1em;
+  float: left;
+}
+
+.subTitle{
+  font-size: 2em;
+  background-color: #7AF882;
+  text-align: center;
+  width: 81%;
+  float: right;
+  top: 0.5em;
+  padding-top: 0.1em;
+  right: 0;
+  position: absolute;
+  font-family: OCR A Std, monospace;
+}
+
+.navigation1{
+  width: 100%;
+  height: 2em;
+  font-size: 1em;
+  box-sizing: border-box;
+  float: right;
+  text-align: right;
+  margin-top: -3em;
+  margin-bottom: 2em;
+}
+
+#nav ul{
+  list-style-type: none;
+}
+#nav li{
+  display: inline;
+  margin: 1em;
+}
+
+.footer{
+  background-color: #72BB9D;
+  width: 100%;
+  text-align: center;
+  box-sizing: border-box;
+  height: 3em;
+  font-size: 1em;
+  position: absolute;
+  font-weight: bold;
+}
+
+.team{
+  height: 45em;
+}
+#p1{
+  font-size: 2em;
+  padding-left: 1em;
+  margin-top: 3em;
+}
+
+.pics{
+  width: 49%;
+  height: 40em;
+  float: left;
+  position: relative;
+  margin-top: 1em;
+  padding-left: 1em;
+  box-shadow: 0.5em 0.5em 1em #73C6B6;
+}
+.pics1{
+  width: 95%;
+  height: 20em;
+  float: right;
+  margin-right: 2em;
+  box-shadow: 0.5em 0.5em 1em #73C6B6;
+}
+
+.process{
+  font-size: 1.5em;
+  margin-right: 1em;
+  margin-top: 0.5em;
+  float: right;
+  width: 45%;
+  line-height: 1.5em;
+  height: 30em;
+}
+
+#largest{
+  position: absolute;
+  background-color: rgba(0,200,0,0.5);
+  bottom: 0;
+  width: 89%;
+  transition: 1s;
+  opacity: 0;
+  color: black;
+  font-size: 2em;
+  padding: 1em;
+}
+
+.pics:hover #largest{
+  opacity: 1;
+}
