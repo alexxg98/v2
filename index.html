@@ -53,39 +53,100 @@
         <h2> Skills </h2>
       </div>
       <button id="resume" type="button" class="btn btn-dark" data-toggle="popover" data-trigger="hover" data-content="Click to view my resume"> <a href="Resume.pdf" target="_blank"> Resume </a> </button>
+
       <div id="skillText">
-        <ul>
-          <li> HTML/CSS
-            <div class="progress" style="width:90%;">
-            <div class="progress-bar bg-danger" style="width:80%"></div>
-            </div>
-          </li>
-          <li> PHP
-            <div class="progress" style="width:90%;">
-            <div class="progress-bar bg-danger" style="width:25%"></div>
-            </div>
-          </li>
-          <li> JavaScript/JQuery
-            <div class="progress" style="width:90%;">
-            <div class="progress-bar bg-danger" style="width:60%"></div>
-            </div>
-          </li>
-          <li> Bootstrap
-            <div class="progress" style="width:90%;">
-            <div class="progress-bar bg-danger" style="width:70%"></div>
-            </div>
-          </li>
-          <li> Microsoft Office
-            <div class="progress" style="width:90%;">
-            <div class="progress-bar bg-danger" style="width:90%"></div>
-            </div>
-          </li>
-          <li> Google Suite
-            <div class="progress" style="width:90%;">
-            <div class="progress-bar bg-danger" style="width:90%"></div>
-            </div>
-          </li>
-        </ul>
+        <table id="skillProg" style="width:100%">
+          <col width="49%">
+          <col width="49%">
+          <tr align="left">
+            <th> Programming Languages </th>
+            <th> Software </th>
+          </tr>
+          <tr>
+            <td>
+              HTML/CSS
+              <div class="progress" style="width:90%;">
+                <div class="progress-bar bg-danger" style="width:80%"></div>
+              </div>
+            </td>
+            <td>
+              Adobe InDesign
+              <div class="progress" style="width:90%;">
+                <div class="progress-bar bg-danger" style="width:80%"></div>
+              </div>
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              C++
+              <div class="progress" style="width:90%;">
+                <div class="progress-bar bg-danger" style="width:50%"></div>
+              </div>
+            </td>
+            <td>
+              Android Studio
+              <div class="progress" style="width:90%;">
+                <div class="progress-bar bg-danger" style="width:40%"></div>
+              </div>
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              Java
+              <div class="progress" style="width:90%;">
+                <div class="progress-bar bg-danger" style="width:30%"></div>
+              </div>
+            </td>
+            <td>
+              Microsoft Office
+              <div class="progress" style="width:90%;">
+                <div class="progress-bar bg-danger" style="width:90%"></div>
+              </div>
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              PHP
+              <div class="progress" style="width:90%;">
+                <div class="progress-bar bg-danger" style="width:25%"></div>
+              </div>
+            </td>
+            <td>
+              Google Suite
+              <div class="progress" style="width:90%;">
+                <div class="progress-bar bg-danger" style="width:90%"></div>
+              </div>
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              JavaScript/jQuery
+              <div class="progress" style="width:90%;">
+                <div class="progress-bar bg-danger" style="width:60%"></div>
+              </div>
+            </td>
+            <td>
+
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              Bootstrap
+              <div class="progress" style="width:90%;">
+                <div class="progress-bar bg-danger" style="width:70%"></div>
+              </div>
+            </td>
+            <td>
+
+            </td>
+          </tr>
+        </table>
+
       </div> <!--close skillText-->
       </div> <!--close col-->
     </div>
@@ -101,7 +162,7 @@
       <div class="carousel" data-ride="carousel" id="carouselId">
 <!--Informative Project-->
       <div id="proj1" class="carousel-item active">
-        <table>
+        <table id="projTable">
           <tr align="left">
           <td scope="col" width=40% style="padding-right: 2em;" id="projText"> <h3> Informative Website |
             <!--<a href="subpages/project1_guo" download="project1"> <img src="images/download.png" id="download"> </a>
