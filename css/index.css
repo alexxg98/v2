@@ -69,8 +69,8 @@ img{
 #about{
   box-sizing: border-box;
   background-color: #eae1e6;
-  height: 25em;
-  padding-left: 4em;
+  height: 50vh;
+  padding-left: 2em;
   padding-top: 1em;
   padding-bottom: 1em;
 }
@@ -124,7 +124,7 @@ img{
   box-sizing: border-box;
   background-color: #eae1e6;
   height: 45em;
-  padding-left: 4em;
+  padding-left: 3em;
   padding-right: 1em;
   color: black;
   padding-top: 1em;
@@ -187,9 +187,9 @@ img{
 #contact{
   box-sizing: border-box;
   background-color: #321b22;
-  height: 98vh;
+  height: 75vh;
   color: white;
-  padding-left: 4em;
+  padding-left: 3em;
   padding-top: 1em;
 }
 
@@ -286,6 +286,8 @@ img{
 
 
 @media screen and (max-width:1150px) {
-#introText, #about, #skills, #projects, #contact{padding-left: 10em; height: auto
-}
+#introText, #about, #skills, #projects, #contact{
+  padding-left: 7em;
+  height: auto;
+  }
 }
