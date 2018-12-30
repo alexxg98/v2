@@ -71,6 +71,7 @@ img{
   height: 25em;
   padding-left: 4em;
   padding-top: 1em;
+  padding-bottom: 1em;
 }
 
 #aboutText{
@@ -81,6 +82,9 @@ img{
 #classList:hover{
   font-size: 0.67em;
   box-shadow: 0em 0em 0em;
+}
+#techworks{
+  font-size: 0.6em;
 }
 
 /*Skills Page*/
