@@ -7,10 +7,11 @@
   width: 86vw;
   float: right;
   font-family: palatino;
+  background-color: #691F2B;
+  color: white;
 }
 
 #head{
-  margin: auto;
   text-align: center;
   border: groove black;
   color: white;
@@ -29,34 +30,27 @@ img{
 /*Index Page*/
 #index{
   box-sizing: border-box;
-  background-color: #321b22;
 }
 
 #logo{
   position: relative;
   padding-top: 10em;
-  height: 30em;
-  width: 30%;
+  height: 50vh;
+  width: 30vh;
   margin: auto;
 }
 
 #introText{
-  color: white;
   padding-left: 10%;
-  top: 10em;
+  top: 5em;
   position: absolute;
   opacity: 0;
   transition: 0.1s ease;
   box-sizing: border-box;
   height: 10em;
   width: 200%;
-  margin: auto;
   margin-left: -70%;
-}
-
-#name{
-  font-size: 5em;
-  text-shadow: 0.1em 0.05em 0.05em darkgray;
+  font-size: 1.5em;
 }
 
 #logo:hover #introText{
@@ -68,11 +62,9 @@ img{
 /*About Me Page*/
 #about{
   box-sizing: border-box;
-  background-color: #eae1e6;
   height: 90vh;
-  padding-left: 2em;
   padding-top: 1em;
-  padding-bottom: 1em;
+  padding-left: 3em;
 }
 
 #aboutText{
@@ -90,16 +82,16 @@ img{
 
 #education{
   font-size: 0.85em;
-  color:#15317E;
+  color: darkgray;
+  margin-top: -20px;
 }
 #relevantCourses{
   font-size: 0.82em;
-  color:#15317E;
+  color: darkgray;
 }
 
 /*Skills Page*/
 #skills{
-  background-color: #321b22;
   color: white;
   padding-top: 1em;
   padding-bottom: 3em;
@@ -131,12 +123,11 @@ img{
 
 #projects{
   box-sizing: border-box;
-  background-color: #eae1e6;
   height: 45em;
   padding-left: 3em;
   padding-right: 1em;
-  color: black;
   padding-top: 1em;
+  width: 100%;
 }
 #proj1{
   margin-top: 1em;
@@ -145,14 +136,16 @@ img{
 }
 #hotelProj{
   margin-top: 1em;
-  width: 100%;
+  width: 80%;
   margin-bottom: 1em;
+  margin: auto;
 }
 
 #projTable{
-  width: 100%;
+  width: 80%;
   height: 5em;
   padding: 1em;
+  margin: auto;
 }
 
 #projText{
@@ -195,9 +188,7 @@ img{
 /*Contact Me Page*/
 #contact{
   box-sizing: border-box;
-  background-color: #321b22;
   height: 75vh;
-  color: white;
   padding-left: 3em;
   padding-top: 1em;
 }
@@ -294,7 +285,7 @@ img{
 
 
 
-@media screen and (max-width:1150px) {
+@media screen and (max-width:1300px) {
 #introText, #about, #skills, #projects, #contact{
   padding-left: 7em;
   height: auto;
