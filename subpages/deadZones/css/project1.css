@@ -171,6 +171,58 @@ a{
   opacity: 1;}
 
 /* The Overview Page */
+.team{
+  height: 45em;
+}
+#p1{
+  font-size: 2em;
+  padding-left: 1em;
+  margin-top: 3em;
+}
+
+.pics{
+  width: 49%;
+  height: 40em;
+  float: left;
+  position: relative;
+  margin-top: 1em;
+  padding-left: 1em;
+  box-shadow: 0.5em 0.5em 1em #73C6B6;
+}
+.pics1{
+  width: 95%;
+  height: 20em;
+  float: right;
+  margin-right: 2em;
+  box-shadow: 0.5em 0.5em 1em #73C6B6;
+}
+
+.process{
+  font-size: 1.5em;
+  margin-right: 1em;
+  margin-top: 0.5em;
+  float: right;
+  width: 45%;
+  line-height: 1.5em;
+  height: 30em;
+}
+
+#largest{
+  position: absolute;
+  background-color: rgba(0,200,0,0.5);
+  bottom: 0;
+  width: 89%;
+  transition: 1s;
+  opacity: 0;
+  color: black;
+  font-size: 2em;
+  padding: 1em;
+}
+
+.pics:hover #largest{
+  opacity: 1;
+}
+
 
 /* The Causes Page */
 table{
