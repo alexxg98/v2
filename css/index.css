@@ -190,14 +190,21 @@ img{
 #contact{
   box-sizing: border-box;
   height: 90vh;
+  width:90vw;
   padding-left: 3em;
   padding-top: 1em;
   text-align: center;
+}
+#icons{
+  margin-left: 2em;
+  border:solid blue;
+  width:auto;
 }
 
 #linkedinIcon, #emailIcon, #githubIcon{
   width: 5em;
   height: 5em;
+  display: block;
 }
 #linkedin, #email, #github{
   width: 8em;
