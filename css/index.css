@@ -1,25 +1,7 @@
-#wholePage{
-  margin: 0;
-  position: absolute;
-  box-sizing: border-box;
-  top: 0;
-  right: 0;
-  width: 86vw;
-  float: right;
-  font-family: palatino;
+body{
+  font-family: 'Abel', sans-serif;
   background-color: #691F2B;
   color: white;
-}
-
-#head{
-  text-align: center;
-  border: groove black;
-  color: white;
-  background-color: black;
-  width: 10em;
-  border-radius: 3em 3em 3em 3em;
-  box-shadow: 0.3em 0.3em 0.3em #a65973;
-  margin-bottom: 2em;
 }
 
 img{
@@ -27,16 +9,15 @@ img{
   height: 100%;
 }
 
-/*Index Page*/
 #index{
   box-sizing: border-box;
 }
 
 #logo{
   position: relative;
-  padding-top: 10em;
-  height: 50vh;
-  width: 30vh;
+  padding-top: 9vh;
+  height: auto;
+  width: 20em;
   margin: auto;
 }
 
@@ -51,6 +32,7 @@ img{
   width: 200%;
   margin-left: -70%;
   font-size: 1.5em;
+
 }
 
 #logo:hover #introText{
@@ -62,14 +44,20 @@ img{
 /*About Me Page*/
 #about{
   box-sizing: border-box;
-  height: 90vh;
   padding-top: 1em;
   padding-left: 3em;
+  margin-left: 10%;
+  margin-right: 10%;
+
 }
 
 #aboutText{
   font-size: 1.5em;
   line-height: 1.5em;
+  padding-left: 5em;
+  padding-right: 5em;
+  padding-top: 1em;
+  color: #8A8A8A;
 }
 
 #classList:hover{
@@ -81,27 +69,33 @@ img{
 }
 
 #education{
-  font-size: 0.85em;
-  color: darkgray;
-  margin-top: -20px;
-}
-#relevantCourses{
-  font-size: 0.82em;
-  color: darkgray;
+  font-size: 1.5em;
+  line-height: 1.5em;
+  padding-left: 5em;
+  padding-right: 5em;
+  padding-top: 1em;
+  color: #8A8A8A;
 }
 
 /*Skills Page*/
 #skills{
-  color: white;
+  box-sizing: border-box;
   padding-top: 1em;
-  padding-bottom: 3em;
   padding-left: 3em;
-  line-height: 3.5em;
-  height: 90vh;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+.table thead tr th, .table tbody tr td {
+    border: none;
 }
 
 #skillText{
   font-size: 1.5em;
+  line-height: 1.5em;
+  padding-left: 5em;
+  padding-right: 5em;
+  padding-top: 1em;
+  color: #8A8A8A;
 }
 
 #resume{
@@ -114,6 +108,7 @@ img{
   font-size: 1.1em;
 }
 
+
 /*Projects Page*/
 /*
 #download{
@@ -124,11 +119,11 @@ img{
 
 #projects{
   box-sizing: border-box;
-  height: 45em;
-  padding-left: 3em;
-  padding-right: 1em;
   padding-top: 1em;
-  width: 100%;
+  padding-left: 3em;
+  margin-left: 10%;
+  margin-right: 10%;
+
 }
 #proj1{
   margin-top: 1em;
@@ -151,7 +146,7 @@ img{
 
 #projText{
   vertical-align: top;
-  font-size: 1.5em;
+  font-size: 1.2em;
 }
 
 #projImg{
@@ -185,19 +180,20 @@ img{
   padding: 0.5em;
 }
 
-
 /*Contact Me Page*/
 #contact{
-  box-sizing: border-box;
-  height: 90vh;
-  width:90vw;
-  padding-left: 3em;
-  padding-top: 1em;
   text-align: center;
+  box-sizing: border-box;
+  padding-top: 1em;
+  padding-left: 3em;
+  margin-left: 25%;
+  margin-right: 25%;
+  margin-top: 10%;
+  font-size: 1.2em;
 }
 #icons{
-  margin-left: 2em;
-  width:auto;
+  margin-left: 25%;
+  margin-right: 25%;
 }
 
 #linkedinIcon, #emailIcon, #githubIcon{
@@ -213,54 +209,6 @@ img{
 }
 #emailIcon:hover{
   cursor: pointer;
-}
-
-/*Navigation Bar*/
-#logoNav{
-  width: 100%;
-  height: 10em;
-  margin: auto;
-  padding: 2em;
-}
-
-#navBar{
-  background-color: black;
-  float: left;
-  height: 150em;
-  width: 11em;
-  position: fixed;
-  box-sizing: border-box;
-  top: 0;
-  left: 0;
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
-  line-height: 3.5em;
-}
-
-#navLink{
-  font-size: 0.8em;
-  font-family: palatino;
-}
-
-#navLink li{
-  text-indent: -0.9em;
-  font-size: 2em;
-  font-weight: bold;
-}
-#navLink a:link{
-  color: #955067;
-}
-#navLink a:hover{
-  font-size: 1em;
-  color: #c18b9d;
-}
-#navLink a:visited:hover{
-  font-size: 1.1em;
-  color: #c18b9d;
-}
-#navLink a:visited{
-  color: #e4cdd5;
 }
 
 
@@ -283,6 +231,14 @@ img{
   cursor: pointer;
   width: 3.5em;
   height: 3.5em;
+}
+
+#copyrightBar{
+  background-color: black;
+  color: white;
+  font-size: 1.2em;
+  text-align: center;
+  padding: 0.5em;
 }
 
 

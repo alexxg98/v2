@@ -1,248 +1,224 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title> Alexandria's Portfolio </title>
-    <link href="css/index.css" type="text/css" rel="stylesheet">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-  </head>
-  <body>
-<div id="wholePage" class="container-fluid" style='width:90vw;'>
+<html lang="en">
+<head>
+  <title>Alexandria's Portfolio</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <link href="css/index.css" type="text/css" rel="stylesheet">
+</head>
+
+<body>
+<!--Navigation Bar-->
+  <nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#">Alexandria Guo</a>
+      </div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav navbar-right">
+          <li class="active"><a href="#">Home</a></li>
+          <li><a href="#">About Me</a></li>
+          <li><a href="#">Skills</a></li>
+          <li><a href="#">Projects</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+
+      </div>
+    </div>
+  </nav>
 
 <!--Index Section-->
-    <div class="row " id="index" style="height: 100vh; width:90vw">
-      <div class="col-12" >
-      <div id="logo" >
-        <img src="images/logo.jpg" alt="logo" id="logoImage">
-        <div id="introText">
-          <img src="images/logoName.jpg" alt="logo with name" style="height:auto; width:60%;">
-          <p> I am an aspiring front end developer based in New York City. Currently, I am studying computer science at The City College of New York.</p>
-        </div>
+  <div id="index">
+    <div id="logo" >
+      <img src="images/logo.jpg" alt="logo" id="logoImage">
+      <div id="introText">
+        <img src="images/logoName.jpg" alt="logo with name" style="height:auto; width:60%;">
+        <p> I am an aspiring front end developer based in New York City. Currently, I am studying computer science at The City College of New York.</p>
       </div>
-      </div> <!--close col-->
     </div>
+  </div>
 <!--End of Index Section-->
 
-<hr style="background-color:white;">
+<br><br>
 <!--About Me Section-->
-    <div class="row" id="about" style="width:90vw;">
-      <div class="col-12">
-      <div id="head">
-        <h2> About Me </h2>
-      </div>
-      <div id="aboutText">
-        <p> I'm an aspiring front end developer, with a passion for coding and design. Taking my interest in design further, I am minoring in art to compliment my desire to create things for the web. </p>
-        <p> Currently, I am taking Web Design in the <button id="classList" class="btn btn-light" data-toggle="collapse" data-target="#techworks"> CUNY TechWorks </button> program in hopes to advance my coding skills. </p>
-          <div id="techworks" class="collapse">
-            <hr>
-            <b>Courses taken in Queensborough Community College: </b>
-            <br/> Web Technology I: Building and Maintaining Web Sites
-            <br/> Web Client Programming: JavaScript
-            <br/> Intro to C++
-            <br/> Creating Smartphone Apps
-          </div> <!--close div for accordian-->
-
-        <h6 style="padding-top:3em;"> <b>Education</b> </h6>
-        <hr style="background-color:white; width:25%;float:left;margin-top:-1px;">
-        <br>
-        <div id="education">
-          <p style="font-weight: bold;">City College of New York
-            <br>Computer Science, B.S.; Minor in <a href="#contact"  data-toggle="tooltip" title="Contact me for my portfolio" style="color:#566D7E;">Art Studio</a>
-          <p>
-          <p id="relevantCourses"> Relevant Courses:
-            <ul style="list-style-type:circle; font-size:0.8em; margin-top:-1em;">
-              <li>Introduction to Computer Science</li>
-              <li>Discrete Math</li>
-              <li>Typography 1</li>
-            </ul>
-          </p>
-      </div> <!--close education-->
-
-    </div> <!--close aboutText-->
-      </div> <!--close col-->
+  <div id="about">
+    <div id="head">
+      <h2> ABOUT ME </h2>
     </div>
-<!--End of About Me Section-->
+    <div id="aboutText">
+      <p> I'm an aspiring front end developer, with a passion for coding and design. Taking my interest in design further, I am minoring in art to compliment my desire to create things for the web. </p>
+      <p> I have recently finished taking a Web Design bootcamp in the <button id="classList" class="btn btn-light" data-toggle="collapse" data-target="#techworks"> CUNY TechWorks </button> program in hopes to advance my coding skills. </p>
+        <div id="techworks" class="collapse">
+          <hr>
+          <b>Courses taken in Queensborough Community College: </b>
+          <br/> Web Technology I: Building and Maintaining Web Sites
+          <br/> Web Client Programming: JavaScript
+          <br/> Intro to C++
+          <br/> Creating Smartphone Apps
+        </div> <!--close div for accordian-->
+    </div> <!--close aboutText-->
 
-<hr style="background-color:white;">
+    <br><br>
+    <div id="head">
+      <h3> EDUCATION </h3>
+    </div>
+    <div id="education">
+      <p>City College of New York
+        <br>Computer Science, B.S.; Minor in <a href="#contact"  data-toggle="tooltip" title="Contact me for my portfolio" style="color:#566D7E;"><b>Art Studio</b></a>
+      </p>
+      <p id="relevantCourses"> Relevant Courses:
+        <ul style="list-style-type:circle; font-size:0.8em; margin-top:-1em;">
+          <li>Introduction to Computer Science</li>
+          <li>Discrete Math</li>
+          <li>Typography 1</li>
+        </ul>
+      </p>
+    </div> <!--close education-->
+  </div><!--End of About Me Section-->
+
 <!--Skills Section-->
-    <div class="row" id="skills" style="width:90vw;">
-      <div class="col">
+    <div id="skills">
       <div id="head">
-        <h2> Skills </h2>
+        <h2> SKILLS </h2>
       </div>
       <button id="resume" type="button" class="btn btn-dark" data-toggle="popover" data-trigger="hover" data-content="Want to see my resume?"> <a href="Resume.pdf" target="_blank"> Resume </a> </button>
 
       <div id="skillText">
-        <table id="skillProg" style="width:100%">
-          <col width="49%">
-          <col width="49%">
-          <tr align="left">
-            <th> Programming Languages </th>
-            <th> Software </th>
-          </tr>
-          <tr>
-            <td>
-              HTML/CSS
-              <div class="progress" style="width:90%;">
-                <div class="progress-bar bg-danger" style="width:80%"></div>
-              </div>
-            </td>
-            <td>
-              Adobe InDesign
-              <div class="progress" style="width:90%;">
-                <div class="progress-bar bg-danger" style="width:80%"></div>
-              </div>
-            </td>
-          </tr>
-
-          <tr>
-            <td>
-              C++
-              <div class="progress" style="width:90%;">
-                <div class="progress-bar bg-danger" style="width:50%"></div>
-              </div>
-            </td>
-            <td>
-              Android Studio
-              <div class="progress" style="width:90%;">
-                <div class="progress-bar bg-danger" style="width:40%"></div>
-              </div>
-            </td>
-          </tr>
-
-          <tr>
-            <td>
-              Java
-              <div class="progress" style="width:90%;">
-                <div class="progress-bar bg-danger" style="width:30%"></div>
-              </div>
-            </td>
-            <td>
-              Microsoft Office
-              <div class="progress" style="width:90%;">
-                <div class="progress-bar bg-danger" style="width:90%"></div>
-              </div>
-            </td>
-          </tr>
-
-          <tr>
-            <td>
-              PHP
-              <div class="progress" style="width:90%;">
-                <div class="progress-bar bg-danger" style="width:25%"></div>
-              </div>
-            </td>
-            <td>
-              Google Suite
-              <div class="progress" style="width:90%;">
-                <div class="progress-bar bg-danger" style="width:90%"></div>
-              </div>
-            </td>
-          </tr>
-
-          <tr>
-            <td>
-              JavaScript/jQuery
-              <div class="progress" style="width:90%;">
-                <div class="progress-bar bg-danger" style="width:60%"></div>
-              </div>
-            </td>
-            <td>
-
-            </td>
-          </tr>
-
-          <tr>
-            <td>
-              Bootstrap
-              <div class="progress" style="width:90%;">
-                <div class="progress-bar bg-danger" style="width:70%"></div>
-              </div>
-            </td>
-            <td>
-
-            </td>
-          </tr>
+        <table class="table table-borderless table-condensed" id="skillProg">
+          <thead>
+            <tr style="color:#BCBCBC;">
+              <th scope="col">Languages</th>
+              <th scope="col">Software</th>
+              <th scope="col">Design</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>HTML</td>
+              <td>Wordpress</td>
+              <td>Adobe InDesign</td>
+            </tr>
+            <tr>
+              <td>CSS</td>
+              <td>Salesforce</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>C++</td>
+              <td>Android Studio</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Bootstrap</td>
+              <td>Microsoft Office</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>JavaScript/jQuery</td>
+              <td>Google Suite</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Python</td>
+              <td>Github</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>MatLab</td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Java</td>
+              <td></td>
+              <td></td>
+            </tr>
+          </tbody>
         </table>
-
       </div> <!--close skillText-->
       </div> <!--close col-->
     </div>
 <!--End of Skills Section-->
 
-<hr style="background-color:white;">
 <!--Projects Section-->
-    <div class="row" id="projects" style="width:90vw;">
-      <div class="col">
+    <div id="projects">
       <div id="head">
-        <h2> Projects </h2>
+        <h2> PROJECTS </h2>
       </div>
-      <div class="carousel" data-ride="carousel" id="carouselId">
+    <div class="carousel slide" data-ride="carousel" id="carouselId">
 <!--Informative Project-->
-      <div id="proj1" class="carousel-item active">
-        <table id="projTable">
-          <tr align="left">
-          <td scope="col" width=40% style="padding-right: 2em;" id="projText"> <h3> Informative Website |
-            <!--<a href="subpages/project1_guo" download="project1"> <img src="images/download.png" id="download"> </a>
+    <div id="proj1" class="carousel-item active">
+      <table id="projTable">
+        <tr align="left">
+        <td scope="col" width=40% style="padding-right: 2em;" id="projText"> <h3> Informative Website |
+          <!--<a href="subpages/project1_guo" download="project1"> <img src="images/download.png" id="download"> </a>
           --></h3>
-            <p> This is an informative website I made about dead zones. The site includes one (1) index and three (3) subpages which are all linked.</p>
+          <p> This is an informative website I made about dead zones. The site includes one (1) index and three (3) subpages which are all linked.</p>
         <span id="codeHTML" class="badge badge-dark badge-pill"> HTML </span>
         <span id="codeCSS" class="badge badge-dark badge-pill"> CSS </span>
-          </td>
-          <th scope="col" id="projImg"> <a href="https://alexxg98.github.io/Dead_Zones/" target="_blank">
-            <img class="img-fluid" src="images/proj1Index.jpg" alt="Project 1"> </a> </th> </tr>
-        </table>
-      </div> <!--close proj1-->
+        </td>
+        <th scope="col" id="projImg"> <a href="https://alexxg98.github.io/Dead_Zones/" target="_blank">
+          <img class="img-fluid" src="images/proj1Index.jpg" alt="Project 1"> </a> </th> </tr>
+      </table>
+    </div> <!--close proj1-->
 <!--Hotel Project-->
-      <div id="hotelProj" class="carousel-item">
-        <table>
-          <tr align="left">
-          <td scope="col" width=40% style="padding-right: 2em;" id="projText"> <h3> Hotel Availability | </h3>
-            <p> This website consists of 10 (ten) users that randomly selects 1 (one) out of the four (four) available hotels. Using the selctions, the program will update the information about each hotels' rooms booked and still available. </p>
+    <div id="hotelProj" class="carousel-item">
+      <table>
+        <tr align="left">
+        <td scope="col" width=40% style="padding-right: 2em;" id="projText"> <h3> Hotel Availability | </h3>
+          <p> This website consists of 10 (ten) users that randomly selects 1 (one) out of the four (four) available hotels. Using the selctions, the program will update the information about each hotels' rooms booked and still available. </p>
         <span id="codeHTML" class="badge badge-dark badge-pill"> HTML </span>
         <span id="codeCSS" class="badge badge-dark badge-pill"> CSS </span>
         <span id="codeJavascript" class="badge badge-dark badge-pill"> JavaScript </span>
-          </td>
-          <th scope="col" id="projImg"> <a href="https://alexxg98.github.io/Hotel_Reservation/" target="_blank">
-            <img class="img-fluid" src="images/hotelProj.JPG" alt="Project 1"> </a> </th> </tr>
-        </table>
-      </div> <!--close hotelProj-->
+        </td>
+        <th scope="col" id="projImg"> <a href="https://alexxg98.github.io/Hotel_Reservation/" target="_blank">
+          <img class="img-fluid" src="images/hotelProj.JPG" alt="Project 1"> </a> </th> </tr>
+      </table>
+    </div> <!--close hotelProj-->
 
-
-      <a class="carousel-control-prev" href="#carouselId" role="button" data-slide="prev"> <!--href to entire container of slideshow, not individual pics-->
-          <span class="carousel-control-prev-icon"> </span>
-      </a>
-      <a class="carousel-control-next" href="#carouselId" role="button" data-slide="next">
-          <span class="carousel-control-next-icon"> </span>
-      </a>
-      </div> <!--Close carousel-->
-      </div> <!--close col-->
-    </div>
+    <a class="carousel-control-prev" href="#carouselId" role="button" data-slide="prev"> <!--href to entire container of slideshow, not individual pics-->
+        <span class="carousel-control-prev-icon"> </span>
+    </a>
+    <a class="carousel-control-next" href="#carouselId" role="button" data-slide="next">
+        <span class="carousel-control-next-icon"> </span>
+    </a>
+    </div> <!--Close carousel-->
+  </div>
 <!--End of Projects Section-->
 
-<hr style="background-color:white;">
 <!--Contact Section-->
-    <h1 style="font-family:verdana;text-align:center;width:auto;"><br> Let's get in touch! </h1>
-    <p style="width:30%; margin:auto; font-size:1.1em;">Whether you want to ask a question or request to see more of my work, feel free to contact me! I'll try my best to reply back to you.
+    <div id="contact">
+      <h1><br> Let's get in touch! </h1>
+      <p>Whether you want to ask a question or request to see more of my work, feel free to contact me! I'll try my best to reply back to you.</p>
+    </div>
     <div id="icons" class="card-columns">
-      <section class="card bg-light" id="github">
+      <div class="card bg-light" id="github">
         <div class="card-header text-dark">
           <h5 class="card-title"> GitHub </h5> </div>
         <div class="card-body">
           <a href="https://github.com/alexxg98" target="_blank">
           <img class="card-img-bottom img-fluid" src="images/GitHubMark.png" id="githubIcon"> </a>
         </div>
-      </section>
+      </div>
 
-      <section class="card bg-light" id="linkedin">
+      <div class="card bg-light" id="linkedin">
         <div class="card-header text-dark">
           <h5 class="card-title"> Linkedin </h5> </div>
         <div class="card-body">
           <a href="https://www.linkedin.com/in/alexandria-guo-724374136/" target="_blank">
           <img class="card-img-bottom img-fluid" src="images/linkedin.jpg" id="linkedinIcon"> </a>
         </div>
-      </section>
+      </div>
 
-      <section class="card bg-light" id="email">
+      <div class="card bg-light" id="email">
         <div class="card-header text-dark">
           <h5 class="card-title"> Email </h5> </div>
         <div class="card-body">
@@ -269,50 +245,23 @@
             </div> <!--close modal content-->
           </div> <!--close modal-->
         </div> <!--close card-->
-      </section>
+      </div>
       </div> <!--close cards-->
 <!--End of Contact Section-->
 
 <!-- Copyright Bar -->
-    <div class="text-white text-center p-1 ml-2 mw-100" style="background-color:black;width:100vw;"> Designed &amp; built by Alexandria Guo | 2018
+    <div id="copyrightBar"> Designed &amp; built by Alexandria Guo | 2019
     </div>
 
-    </div> <!--End of Content Section (#wholePage)-->
 
-<!--Navigation Bar-->
-    <div id="container">
-      <div class="row">
-      <nav class="col-sm-3" id="navBar">
-      <!--<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapseTab" aria-controls="collapseTab" aria-expanded="false">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="collapseTab">-->
-        <img src="images/logoIn.jpg" alt="logo" id="logoNav">
-      <ul style="list-style-type: none;" id="navLink" class="nav flex-column pl-4">
-        <li class="nav-item"> <a style="text-decoration: none;" href="#about" class="nav-link active"> About Me </a> </li>
-        <li class="nav-item"> <a style="text-decoration: none;" href="#skills" class="nav-link"> Skills </a> </li>
-        <li class="nav-item"> <a style="text-decoration: none;" href="#projects" class="nav-link"> Projects </a> </li>
-        <li class="nav-item"> <a style="text-decoration: none;" href="#contact" class="nav-link"> Contact </a> </li>
-      </ul>
-    <!--</div>-->
-    </nav>
-    </div> <!--close row-->
-    </div> <!--close container-->
-<!-- End of Navigation Bar-->
 
 <!--Scroll to top button-->
   <div id="topButton">
     <a href="#"><img src="images/upArrow.jpg" id="upImg"></a>
   </div>
 
-
-
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-
-  <script src="js/index.js"> </script>
-
-  </body>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
 </html>
