@@ -148,9 +148,14 @@ img{
   margin: auto;
 }
 
-#projText{
+#projTitle{
   vertical-align: top;
   font-size: 1.2em;
+}
+#projText{
+  vertical-align: top;
+  font-size: 1em;
+  color: #8A8A8A;
 }
 
 #projImg{
