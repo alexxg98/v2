@@ -4,35 +4,24 @@
   <title>Alexandria's Portfolio</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
   <link href="css/index.css" type="text/css" rel="stylesheet">
 </head>
 
 <body>
 <!--Navigation Bar-->
-  <nav class="navbar navbar-inverse">
-    <div class="container-fluid">
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-        <a class="navbar-brand" href="#">Alexandria Guo</a>
-      </div>
-      <div class="collapse navbar-collapse" id="myNavbar">
-        <ul class="nav navbar-nav navbar-right">
-          <li class="active"><a href="#">Home</a></li>
-          <li><a href="#about">About Me</a></li>
-          <li><a href="#skills">Skills</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-
-      </div>
-    </div>
+  <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
+    <a class="navbar-brand" href="#">Alexandria Guo</a>
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-link active"><a href="#">Home</a></li>
+      <li class="nav-link"><a href="#about">About Me</a></li>
+      <li class="nav-link"><a href="#workExp">Experience</a></li>
+      <li class="nav-link"><a href="#projects">Projects</a></li>
+      <li class="nav-link"><a href="#contact">Contact</a></li>
+    </ul>
   </nav>
 
 <!--Index Section-->
@@ -41,7 +30,7 @@
       <img src="images/logo.jpg" alt="logo" id="logoImage">
       <div id="introText">
         <img src="images/logoName.jpg" alt="logo with name" style="height:auto; width:60%;">
-        <p> I am an aspiring front end developer based in New York City. Currently, I am studying computer science at The City College of New York.</p>
+        <p> I am an aspiring front-end developer and web designer based in New York City. </p>
       </div>
     </div>
   </div>
@@ -50,149 +39,144 @@
 <br><br>
 <!--About Me Section-->
   <div id="about">
-    <div id="head">
+    <div class="head">
       <h2> ABOUT ME </h2>
     </div>
-    <div id="aboutText">
-      <p> I'm an aspiring front end developer, with a passion for coding and design. Taking my interest in design further, I am minoring in art to compliment my desire to create things for the web. </p>
-      <p> I have recently finished taking a Web Design bootcamp in the <button id="classList" class="btn btn-light" data-toggle="collapse" data-target="#techworks"> CUNY TechWorks </button> program in hopes to advance my coding skills. </p>
-        <div id="techworks" class="collapse">
-          <hr>
-          <b>Courses taken in Queensborough Community College: </b>
-          <br/> Web Technology I: Building and Maintaining Web Sites
-          <br/> Web Client Programming: JavaScript
-          <br/> Intro to C++
-          <br/> Creating Smartphone Apps
-        </div> <!--close div for accordian-->
-    </div> <!--close aboutText-->
 
-    <br><br>
-    <div id="head">
-      <h3> EDUCATION </h3>
-    </div>
-    <div id="education">
-      <p>City College of New York
-        <br>Computer Science, B.S.; Minor in <a href="#contact"  data-toggle="tooltip" title="Contact me for my portfolio" style="color:#566D7E;"><b>Art Studio</b></a>
-      </p>
-      <p id="relevantCourses"> Relevant Courses:
-        <ul style="list-style-type:circle; font-size:0.8em; margin-top:-1em;">
-          <li>Introduction to Computer Science</li>
-          <li>Data Structures</li>
-          <li>Programming Language - Python</li>
-          <li>Discrete Math</li>
-          <li>Typography 1</li>
+    <div class="grid-container-about">
+      <div class="grid-item background">
+        <div class="head">
+          BACKGROUND
+        </div>
+        <p> I am an aspiring front end developer, with a passion for coding and design. Taking my interest in design further, I am minoring in art to compliment my desire to create things for the web. I am particularly  fond of minimalistic designs.
+        <br> I have recently completed a training program, CUNYTechWorks, that teaches and prepares students for tech careers. From the program I have expanded my knowledge of HTML, CSS, Javascript/JQuery, Bootstrap, and C++. I am continuously learning and improving my programming and design skills.
+        </p>
+      </div>
+      <div class="grid-item education">
+        <div class="head">
+          EDUCATION
+        </div>
+        <p><b style="color:#BCBCBC;">The City College of New York</b>
+          <br>Computer Science, B.S. | Minor in Art Studio
+        </p>
+        <p><b style="color:#BCBCBC;">Queensborough Community College</b>
+          <span style="font-size:0.7em;">(May 2018 - Jan 2019)</span>
+          <br>CUNYTechWorks, Software Development Training Program
+        </p>
+      </div>
+      <div class="grid-item skills">
+        <div class="head">
+          A FEW TECHNOLOGIES I'VE WORKED WITH RECENTLY:
+        </div>
+        <ul>
+          <li><span style='font-size:10px;'>&#9658;</span> HTML & CSS</li>
+          <li><span style='font-size:10px;'>&#9658;</span> Bootstrap</li>
+          <li><span style='font-size:10px;'>&#9658;</span> Wordpress</li>
+          <li><span style='font-size:10px;'>&#9658;</span> Adobe InDesign</li>
         </ul>
-      </p>
-    </div> <!--close education-->
+
+        <br>
+        <button id="resume"><span>VIEW MY RESUME </span></button>
+
+      </div>
+    </div><!--End of grid container-->
   </div><!--End of About Me Section-->
 
-<!--Skills Section-->
-    <div id="skills">
-      <div id="head">
-        <h2> SKILLS </h2>
+<!--Work Section-->
+<br><br><br>
+  <div id="workExp">
+    <div class="flex-container">
+      <div class="head" style="color: white;">
+        <h2>WHERE I HAVE WORKED</h2>
       </div>
-      <button id="resume" type="button" class="btn btn-dark" data-toggle="popover" data-trigger="hover" data-content="Want to see my resume?"> <a href="Resume.pdf" target="_blank"> Resume </a> </button>
+      <div>
+        <div class="timeline">
+          <div class="container-timeline left">
+            <div class="content">
+              <h3>July 2019</h3>
+              <p><b><a href="https://www.westxeast.com/">WEXTxEAST</a> | A fashion startup</b></p>
+              <p>I researched and wireframed a layout for their website and implemented the changes using Wix. I made sure all the neccesary information was included on their homepage; and designed a gallery page that is more organized.<p>
+                <span class="moreInfoWork">
+                  <a href="subpages/wxe.html"> More Info &#187; </a>
+                </span>
+            </div>
+          </div>
+          <div class="container-timeline right">
+            <div class="content">
+              <h3>April 2019</h3>
+              <p><b><a href="http://newagedrinks.com">New Age Drinks</a> | A beverage startup</b></p>
+              <p>I researched, wireframed and mapped the design layout for a new site and implemented the website using WordPress. The design focused on gathering interest for the new product.<p>
+                <span class="moreInfoWork">
+                  <a href="subpages/newagedrinks.html"> More Info &#187; </a>
+                </span>
+            </div>
+          </div>
 
-      <div id="skillText">
-        <table class="table table-borderless table-condensed" id="skillProg">
-          <thead>
-            <tr style="color:#BCBCBC;">
-              <th scope="col">Languages</th>
-              <th scope="col">Software</th>
-              <th scope="col">Design</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>HTML</td>
-              <td>Wordpress</td>
-              <td>Adobe InDesign</td>
-            </tr>
-            <tr>
-              <td>CSS</td>
-              <td>Salesforce</td>
-              <td></td>
-            </tr>
-            <tr>
-              <td>C++</td>
-              <td>Android Studio</td>
-              <td></td>
-            </tr>
-            <tr>
-              <td>Bootstrap</td>
-              <td>Microsoft Office</td>
-              <td></td>
-            </tr>
-            <tr>
-              <td>JavaScript/jQuery</td>
-              <td>Google Suite</td>
-              <td></td>
-            </tr>
-            <tr>
-              <td>Python</td>
-              <td>Github</td>
-              <td></td>
-            </tr>
-            <tr>
-              <td>MatLab</td>
-              <td></td>
-              <td></td>
-            </tr>
-            <tr>
-              <td>Java</td>
-              <td></td>
-              <td></td>
-            </tr>
-          </tbody>
-        </table>
-      </div> <!--close skillText-->
-      </div> <!--close col-->
-    </div>
-<!--End of Skills Section-->
+
+        </div><!--End of timeline-->
+      </div><!--End of 2nd container-->
+    </div><!--End of flex container-->
+  </div><!--End of work experience-->
 
 <!--Projects Section-->
     <div id="projects">
-      <div id="head">
-        <h2> PROJECTS </h2>
+      <div class="head" style="color: white;">
+        <h2>SOME THINGS I'VE DESIGNED</h2>
       </div>
-    <div class="carousel slide" data-ride="carousel" id="carouselId">
-<!--Informative Project-->
-    <div id="proj1" class="carousel-item active">
-      <table id="projTable">
-        <tr align="left">
-        <td scope="col" width=40% style="padding-right: 2em;" id="projTitle"> <h3> Informative Website |
-          <!--<a href="subpages/project1_guo" download="project1"> <img src="images/download.png" id="download"> </a>
-          --></h3>
-          <p id="projText"> This is an informative website I made about dead zones. The site includes one (1) index and three (3) subpages which are all linked.</p>
-        <span id="codeHTML" class="badge badge-dark badge-pill"> HTML </span>
-        <span id="codeCSS" class="badge badge-dark badge-pill"> CSS </span>
-        </td>
-        <th scope="col" id="projImg"> <a href="https://alexxg98.github.io/Dead_Zones/" target="_blank">
-          <img class="img-fluid" src="images/proj1Index.jpg" alt="Project 1"> </a> </th> </tr>
-      </table>
-    </div> <!--close proj1-->
-<!--Hotel Project-->
-    <div id="hotelProj" class="carousel-item">
-      <table>
-        <tr align="left">
-        <td scope="col" width=40% style="padding-right: 2em;" id="projTitle"> <h3> Hotel Availability | </h3>
-          <p id="projText"> This website consists of 10 (ten) users that randomly selects 1 (one) out of the four (four) available hotels. Using the selctions, the program will update the information about each hotels' rooms booked and still available. </p>
-        <span id="codeHTML" class="badge badge-dark badge-pill"> HTML </span>
-        <span id="codeCSS" class="badge badge-dark badge-pill"> CSS </span>
-        <span id="codeJavascript" class="badge badge-dark badge-pill"> JavaScript </span>
-        </td>
-        <th scope="col" id="projImg"> <a href="https://alexxg98.github.io/Hotel_Reservation/" target="_blank">
-          <img class="img-fluid" src="images/hotelProj.JPG" alt="Project 1"> </a> </th> </tr>
-      </table>
-    </div> <!--close hotelProj-->
+      <br><br>
+      <h3 style="color: white;">From CUNYTechWorks</h3>
 
-    <a class="carousel-control-prev" href="#carouselId" role="button" data-slide="prev"> <!--href to entire container of slideshow, not individual pics-->
-        <span class="carousel-control-prev-icon"> </span>
-    </a>
-    <a class="carousel-control-next" href="#carouselId" role="button" data-slide="next">
-        <span class="carousel-control-next-icon"> </span>
-    </a>
-    </div> <!--Close carousel-->
+      <div id="demo" class="carousel slide" data-ride="carousel">
+
+        <!-- Indicators -->
+        <ul class="carousel-indicators">
+          <li data-target="#demo" data-slide-to="0" class="active"></li>
+          <li data-target="#demo" data-slide-to="1"></li>
+        </ul>
+
+        <!-- The slideshow -->
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="flex-container-carousel">
+              <div style="flex-grow: 1; padding-left:100px; width:35%;">
+                <h3><b>Informative Website</b></h3>
+                <p>This is an informative website I made about dead zones. The site includes one (1) index and three (3) subpages which are all linked. The goal of this project is to utilize all the CSS techniques we had learned, such as transitions and hover.</p>
+                <span id="codeHTML" class="badge badge-dark badge-pill"> HTML </span>
+                <span id="codeCSS" class="badge badge-dark badge-pill"> CSS </span>
+              </div>
+              <div style="flex-grow: 6;">
+                <img src="images/proj1Index.jpg" alt="Informative Site - Dead Zones">
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="flex-container-carousel">
+              <div style="flex-grow: 1; padding-left:100px; width:35%;">
+                <h3><b>Hotel Availability</b></h3>
+                <p>This website consists of 10 (ten) users that randomly selects 1 (one) out of the four (four) available hotels. Using the selctions, the program will update the information about each hotels' rooms booked and still available.</p>
+                <span id="codeHTML" class="badge badge-dark badge-pill"> HTML </span>
+                <span id="codeCSS" class="badge badge-dark badge-pill"> CSS </span>
+                <span id="codeJavascript" class="badge badge-dark badge-pill"> JavaScript </span>
+              </div>
+              <div>
+                <img class="img-fluid" src="images/hotelProj.jpg" alt="Hotel Availability Project">
+            </div>
+          </div>
+        </div>
+
+        <!-- Left and right controls -->
+        <a class="carousel-control-prev" href="#demo" data-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+        </a>
+        <a class="carousel-control-next" href="#demo" data-slide="next">
+          <span class="carousel-control-next-icon"></span>
+        </a>
+      </div><!--End of carousel-->
+
+
+
+
+
   </div>
 <!--End of Projects Section-->
 
@@ -261,12 +245,6 @@
   <div id="topButton">
     <a href="#"><img src="images/upArrow.jpg" id="upImg"></a>
   </div>
-
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-
-<script src="js/index.js"> </script>
 
 </body>
 </html>
