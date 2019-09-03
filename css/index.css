@@ -1,5 +1,5 @@
 body{
-  font-family: 'Abel', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   background-color: #691F2B;
   font-size: 1em;
   position: relative;
@@ -14,7 +14,12 @@ img{
   color: #691F2B;
 }
 
-.head{
+.sectionTitle{
+  color: white;
+  font-weight: 700;
+  font-size: 2em;
+}
+.subSections{
   color: white;
 }
 
@@ -181,7 +186,7 @@ ul{
   height: 20px;
   left: 99.5%;
   background-color: white;
-  border: 4px solid #FF9F55;
+  border: 4px solid #d97f8d;
   top: 15px;
   border-radius: 50%;
   z-index: 1;
@@ -292,7 +297,6 @@ span.moreInfoWork{
 .flex-container-carousel > div {
   margin: 10px;
   line-height: 1.5em;
-  padding: 1em;
   text-align: left;
   color: #8A8A8A;
   width: 100%;
@@ -324,6 +328,21 @@ span.moreInfoWork{
   padding: 0.8em;
 }
 
+.viewMore{
+  width: 100%;
+  text-align: center;
+  margin-top: 5%
+}
+#viewMoreProj{
+  background-color: inherit;
+  border: 1px solid #d97f8d;
+  color: #d97f8d;
+  padding: 1em;
+}
+#viewMoreProj:hover{
+  background-color: #782331;
+}
+
 /*Contact Me Page*/
 #contact{
   text-align: center;
@@ -332,7 +351,7 @@ span.moreInfoWork{
   padding-left: 3em;
   margin-left: 25%;
   margin-right: 25%;
-  margin-top: 2%;
+  margin-top: 5%;
   margin-bottom: 5%;
   font-size: 1.2em;
   color: white;
@@ -385,7 +404,7 @@ span.moreInfoWork{
 #copyrightBar{
   background-color: black;
   color: white;
-  font-size: 1.2em;
+  font-size: 0.9em;
   text-align: center;
   padding: 0.5em;
   width: 100%;

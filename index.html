@@ -4,11 +4,17 @@
   <title>Alexandria's Portfolio</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <<!-- Bootstrap and JavaScript -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
   <link href="css/index.css" type="text/css" rel="stylesheet">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap" rel="stylesheet">
+
 </head>
 
 <body data-spy="scroll" data-target=".navbar" data-offset="50">
@@ -39,13 +45,13 @@
 <br><br>
 <!--About Me Section-->
   <div id="about">
-    <div class="head">
-      <h2> ABOUT ME </h2>
+    <div class="sectionTitle">
+      ABOUT ME
     </div>
 
     <div class="grid-container-about">
       <div class="grid-item background">
-        <div class="head">
+        <div class="subSections">
           BACKGROUND
         </div>
         <p> I am an aspiring front end developer, with a passion for coding and design. Taking my interest in design further, I am minoring in art to compliment my desire to create things for the web. I am particularly  fond of minimalistic designs.
@@ -53,19 +59,19 @@
         </p>
       </div>
       <div class="grid-item education">
-        <div class="head">
+        <div class="subSections">
           EDUCATION
         </div>
-        <p><b style="color:#BCBCBC;">The City College of New York</b>
+        <p><span style="color:#BCBCBC;">The City College of New York</span>
           <br>Computer Science, B.S. | Minor in Art Studio
         </p>
-        <p><b style="color:#BCBCBC;">Queensborough Community College</b>
+        <p><span style="color:#BCBCBC;">Queensborough Community College</span>
           <span style="font-size:0.7em;">(May 2018 - Jan 2019)</span>
           <br>CUNYTechWorks, Software Development Training Program
         </p>
       </div>
       <div class="grid-item skills">
-        <div class="head">
+        <div class="subSections">
           A FEW TECHNOLOGIES I'VE WORKED WITH RECENTLY:
         </div>
         <ul>
@@ -86,8 +92,8 @@
 <br><br><br>
   <div id="workExp">
     <div class="flex-container">
-      <div class="head" style="color: white;">
-        <h2>WHERE I HAVE WORKED</h2>
+      <div class="sectionTitle" style="color:white;">
+        WHERE I HAVE WORKED
       </div>
       <div>
         <div class="timeline">
@@ -120,11 +126,13 @@
 
 <!--Projects Section-->
     <div id="projects">
-      <div class="head" style="color: white;">
-        <h2>SOME THINGS I'VE DESIGNED</h2>
+      <div class="sectionTitle">
+        SOME THINGS I'VE DESIGNED
       </div>
       <br><br>
-      <h3 style="color: white;">From CUNYTechWorks</h3>
+      <div class="subSections" style="font-size:1.5em;">
+        From CUNYTechWorks
+      </div>
 
       <div id="demo" class="carousel slide" data-ride="carousel">
 
@@ -137,9 +145,11 @@
         <!-- The slideshow -->
         <div class="carousel-inner">
           <div class="carousel-item active">
+            <div style="text-align:center; color: white;">
+              <h3>Informative Website</h3>
+            </div>
             <div class="flex-container-carousel">
-              <div style="flex-grow: 1; padding-left:100px; width:35%;">
-                <h3><b>Informative Website</b></h3>
+              <div style="flex-grow: 1; padding-left:90px; width:40%;">
                 <p>This is an informative website I made about dead zones. The site includes one (1) index and three (3) subpages which are all linked. The goal of this project is to utilize all the CSS techniques we had learned, such as transitions and hover.</p>
                 <span id="codeHTML" class="badge badge-dark badge-pill"> HTML </span>
                 <span id="codeCSS" class="badge badge-dark badge-pill"> CSS </span>
@@ -150,9 +160,11 @@
             </div>
           </div>
           <div class="carousel-item">
+            <div style="text-align:center; color: white;">
+              <h3>Hotel Availability</h3>
+            </div>
             <div class="flex-container-carousel">
-              <div style="flex-grow: 1; padding-left:100px; width:35%;">
-                <h3><b>Hotel Availability</b></h3>
+              <div style="flex-grow: 1; padding-left:90px; width:35%;">
                 <p>This website consists of 10 (ten) users that randomly selects 1 (one) out of the four (four) available hotels. Using the selctions, the program will update the information about each hotels' rooms booked and still available.</p>
                 <span id="codeHTML" class="badge badge-dark badge-pill"> HTML </span>
                 <span id="codeCSS" class="badge badge-dark badge-pill"> CSS </span>
@@ -173,62 +185,82 @@
         </a>
       </div>
     </div><!--End of carousel-->
-  </div>
-<!--End of Projects Section-->
+
+    <br>
+    <div class="subSections" style="font-size:1.5em;">
+      FEATURED DESIGN WORK
+    </div>
+    <br>
+    <div class="d-flex">
+      <div class="p-2 flex-fill">
+        <img class="img-fluid" src="images/typeThumbnail.png" alt="Typography Creation Project">
+      </div>
+      <div class="p-2 flex-fill">
+        <img class="img-fluid" src="images/poem1.jpg" alt="Concrete Quote Poem Project">
+      </div>
+      <div class="p-2 flex-fill">
+        <img class="img-fluid" src="images/playingCardThumbnail.png" alt="Symmetric Playing Card Design">
+      </div>
+    </div>
+    <div class="viewMore">
+      <button id="viewMoreProj"> More Projects </button>
+    </div>
+
+  </div><!--End of Projects Section-->
 
 <!--Contact Section-->
-    <div id="contact">
-      <h1><br> Let's get in touch! </h1>
-      <p>Whether you want to ask a question or request to see more of my work, feel free to contact me! I'll try my best to reply back to you.</p>
+  <div id="contact">
+    <span class="sectionTitle">Let's get in touch!</span>
+    <p>Whether you want to ask a question or request to see more of my work, feel free to contact me! I'll try my best to reply back to you.</p>
+  </div>
+  <div id="icons" class="card-columns">
+    <div class="card" id="github">
+      <div class="card-header text-light">
+        <h5 class="card-title"> GitHub </h5> </div>
+      <div class="card-body">
+        <a href="https://github.com/alexxg98" target="_blank">
+        <img class="card-img-bottom img-fluid" src="images/GitHubMark.png" id="githubIcon"> </a>
+      </div>
     </div>
-    <div id="icons" class="card-columns">
-      <div class="card" id="github">
-        <div class="card-header text-light">
-          <h5 class="card-title"> GitHub </h5> </div>
-        <div class="card-body">
-          <a href="https://github.com/alexxg98" target="_blank">
-          <img class="card-img-bottom img-fluid" src="images/GitHubMark.png" id="githubIcon"> </a>
-        </div>
-      </div>
 
-      <div class="card" id="linkedin">
-        <div class="card-header text-light">
-          <h5 class="card-title"> Linkedin </h5> </div>
-        <div class="card-body">
-          <a href="https://www.linkedin.com/in/alexandria-guo-724374136/" target="_blank">
-          <img class="card-img-bottom img-fluid" src="images/linkedin.jpg" id="linkedinIcon"> </a>
-        </div>
+    <div class="card" id="linkedin">
+      <div class="card-header text-light">
+        <h5 class="card-title"> Linkedin </h5> </div>
+      <div class="card-body">
+        <a href="https://www.linkedin.com/in/alexandria-guo-724374136/" target="_blank">
+        <img class="card-img-bottom img-fluid" src="images/linkedin.jpg" id="linkedinIcon"> </a>
       </div>
+    </div>
 
-      <div class="card" id="email">
-        <div class="card-header text-light">
-          <h5 class="card-title"> Email </h5> </div>
-        <div class="card-body">
-          <!-- Button to Open the Modal -->
-          <div data-toggle="modal" data-target="#myModal">
-            <img class="card-img img-fluid" src="images/mail.png" id="emailIcon"/>
+    <div class="card" id="email">
+      <div class="card-header text-light">
+        <h5 class="card-title"> Email </h5> </div>
+      <div class="card-body">
+        <!-- Button to Open the Modal -->
+        <div data-toggle="modal" data-target="#myModal">
+          <img class="card-img img-fluid" src="images/mail.png" id="emailIcon"/>
+        </div>
+
+        <!-- The Modal -->
+        <div class="modal" id="myModal" style="width:50%; margin:auto; margin-top:3em;">
+          <div class="modal-content">
+
+          <!-- Modal Header -->
+          <div class="modal-header">
+            <h4 class="modal-title text-dark">Email me at...</h4>
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
           </div>
 
-          <!-- The Modal -->
-          <div class="modal" id="myModal" style="width:50%; margin:auto; margin-top:3em;">
-            <div class="modal-content">
+          <!-- Modal body -->
+          <div class="modal-body text-dark">
+            lexieguo@gmail.com <br/> OR <br/> aguo001@citymail.cuny.edu
+          </div>
 
-            <!-- Modal Header -->
-            <div class="modal-header">
-              <h4 class="modal-title text-dark">Email me at...</h4>
-              <button type="button" class="close" data-dismiss="modal">&times;</button>
-            </div>
-
-            <!-- Modal body -->
-            <div class="modal-body text-dark">
-              lexieguo@gmail.com <br/> OR <br/> aguo001@citymail.cuny.edu
-            </div>
-
-            </div> <!--close modal content-->
-          </div> <!--close modal-->
-        </div> <!--close card-->
-      </div>
-      </div> <!--close cards-->
+          </div> <!--close modal content-->
+        </div> <!--close modal-->
+      </div> <!--close card-->
+    </div>
+  </div> <!--close cards-->
 <!--End of Contact Section-->
 
 <!-- Copyright Bar -->
