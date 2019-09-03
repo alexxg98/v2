@@ -11,16 +11,16 @@
   <link href="css/index.css" type="text/css" rel="stylesheet">
 </head>
 
-<body>
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
 <!--Navigation Bar-->
-  <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
+  <nav class="navbar navbar-expand-sm navbar-dark fixed-top" style="background-color:black;">
     <a class="navbar-brand" href="#">Alexandria Guo</a>
     <ul class="navbar-nav ml-auto">
-      <li class="nav-link active"><a href="#">Home</a></li>
-      <li class="nav-link"><a href="#about">About Me</a></li>
-      <li class="nav-link"><a href="#workExp">Experience</a></li>
-      <li class="nav-link"><a href="#projects">Projects</a></li>
-      <li class="nav-link"><a href="#contact">Contact</a></li>
+      <li class="nav-link"><a class="nav-link" href="#">Home</a></li>
+      <li class="nav-link"><a class="nav-link" href="#about">About Me</a></li>
+      <li class="nav-link"><a class="nav-link" href="#workExp">Experience</a></li>
+      <li class="nav-link"><a class="nav-link" href="#projects">Projects</a></li>
+      <li class="nav-link"><a class="nav-link" href="#contact">Contact</a></li>
     </ul>
   </nav>
 
@@ -77,8 +77,8 @@
 
         <br>
         <button id="resume"><span>VIEW MY RESUME </span></button>
-
       </div>
+
     </div><!--End of grid container-->
   </div><!--End of About Me Section-->
 
@@ -114,7 +114,7 @@
 
 
         </div><!--End of timeline-->
-      </div><!--End of 2nd container-->
+      </div>
     </div><!--End of flex container-->
   </div><!--End of work experience-->
 
@@ -171,12 +171,8 @@
         <a class="carousel-control-next" href="#demo" data-slide="next">
           <span class="carousel-control-next-icon"></span>
         </a>
-      </div><!--End of carousel-->
-
-
-
-
-
+      </div>
+    </div><!--End of carousel-->
   </div>
 <!--End of Projects Section-->
 
@@ -186,8 +182,8 @@
       <p>Whether you want to ask a question or request to see more of my work, feel free to contact me! I'll try my best to reply back to you.</p>
     </div>
     <div id="icons" class="card-columns">
-      <div class="card bg-light" id="github">
-        <div class="card-header text-dark">
+      <div class="card" id="github">
+        <div class="card-header text-light">
           <h5 class="card-title"> GitHub </h5> </div>
         <div class="card-body">
           <a href="https://github.com/alexxg98" target="_blank">
@@ -195,8 +191,8 @@
         </div>
       </div>
 
-      <div class="card bg-light" id="linkedin">
-        <div class="card-header text-dark">
+      <div class="card" id="linkedin">
+        <div class="card-header text-light">
           <h5 class="card-title"> Linkedin </h5> </div>
         <div class="card-body">
           <a href="https://www.linkedin.com/in/alexandria-guo-724374136/" target="_blank">
@@ -204,8 +200,8 @@
         </div>
       </div>
 
-      <div class="card bg-light" id="email">
-        <div class="card-header text-dark">
+      <div class="card" id="email">
+        <div class="card-header text-light">
           <h5 class="card-title"> Email </h5> </div>
         <div class="card-body">
           <!-- Button to Open the Modal -->

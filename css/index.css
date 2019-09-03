@@ -1,6 +1,8 @@
 body{
   font-family: 'Abel', sans-serif;
   background-color: #691F2B;
+  font-size: 1em;
+  position: relative;
 }
 
 img{
@@ -10,17 +12,6 @@ img{
 #workExp a{
   text-decoration: none;
   color: #691F2B;
-}
-.navbar a{
-  text-decoration: none;
-  color: white;
-}
-.navbar a:hover{
-  text-decoration: none;
-  color: #d97f8d;
-}
-.text-dark{
-  color: black;
 }
 
 .head{
@@ -34,9 +25,9 @@ img{
 
 #logo{
   position: relative;
-  padding-top: 9vh;
+  padding-top: 13vh;
   height: auto;
-  width: 20em;
+  width: 20%;
   margin: auto;
 }
 
@@ -48,8 +39,8 @@ img{
   transition: 0.1s ease;
   box-sizing: border-box;
   height: 10em;
-  width: 200%;
-  margin-left: -70%;
+  width: 300%;
+  margin-left: -100%;
   font-size: 1.5em;
   color: white;
 }
@@ -79,7 +70,6 @@ img{
   grid-template-columns: 45% 55%;
 }
 .grid-item {
-  font-size: 1.5em;
   line-height: 1.5em;
   padding-top: 1em;
   text-align: left;
@@ -108,7 +98,7 @@ ul{
   display: inline-block;
   background-color: inherit;
   border: none;
-  color: #FFFFFF;
+  color: white;
   font-size: 1.1em;
   width: auto;
   transition: all 0.5s;
@@ -153,7 +143,6 @@ ul{
 .flex-container > div {
   width: auto;
   margin: 10px;
-  font-size: 1.5em;
   line-height: 1.5em;
   padding-top: 1em;
   text-align: left;
@@ -302,7 +291,6 @@ span.moreInfoWork{
 
 .flex-container-carousel > div {
   margin: 10px;
-  font-size: 1em;
   line-height: 1.5em;
   padding: 1em;
   text-align: left;
@@ -344,13 +332,15 @@ span.moreInfoWork{
   padding-left: 3em;
   margin-left: 25%;
   margin-right: 25%;
-  margin-top: 10%;
+  margin-top: 2%;
+  margin-bottom: 5%;
   font-size: 1.2em;
+  color: white;
 }
 #icons{
   margin-left: 25%;
   margin-right: 25%;
-  margin-bottom: 5%;
+  margin-bottom: 10%;
 }
 
 #linkedinIcon, #emailIcon, #githubIcon{
@@ -363,6 +353,7 @@ span.moreInfoWork{
   height: auto;
   margin-top: 2em;
   margin-left: 1.5em;
+  background-color: inherit;
 }
 #emailIcon:hover{
   cursor: pointer;
@@ -397,6 +388,7 @@ span.moreInfoWork{
   font-size: 1.2em;
   text-align: center;
   padding: 0.5em;
+  width: 100%;
 }
 
 
