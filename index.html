@@ -14,7 +14,7 @@
 
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap" rel="stylesheet">
-
+  <link href="https://fonts.googleapis.com/css?family=Cinzel&display=swap" rel="stylesheet">
 </head>
 
 <body data-spy="scroll" data-target=".navbar" data-offset="50">
@@ -39,6 +39,9 @@
         <p> I am an aspiring front-end developer and web designer based in New York City. </p>
       </div>
     </div>
+    <div id="downArrow">
+      <a href="#about"> <img src="images/downArrow.png"> </a>
+    </div>
   </div>
 <!--End of Index Section-->
 
@@ -54,8 +57,8 @@
         <div class="subSections">
           BACKGROUND
         </div>
-        <p> I am an aspiring front end developer, with a passion for coding and design. Taking my interest in design further, I am minoring in art to compliment my desire to create things for the web. I am particularly  fond of minimalistic designs.
-        <br> I have recently completed a training program, CUNYTechWorks, that teaches and prepares students for tech careers. From the program I have expanded my knowledge of HTML, CSS, Javascript/JQuery, Bootstrap, and C++. I am continuously learning and improving my programming and design skills.
+        <p> Hi! My name is Alexandria. I am an aspiring front end developer, with a passion for coding and design. Taking my interest in design further, I am minoring in art to compliment my desire to create things for the web. I am particularly  fond of minimalistic designs.
+        <br><br> I have recently completed a training program, CUNYTechWorks, that teaches and prepares students for tech careers. From the program I have expanded my knowledge of HTML, CSS, Javascript/JQuery, Bootstrap, and C++. I am continuously learning and improving my programming and design skills.
         </p>
       </div>
       <div class="grid-item education">
@@ -82,7 +85,7 @@
         </ul>
 
         <br>
-        <button id="resume"><span>VIEW MY RESUME </span></button>
+        <button id="resume"><span><a href="Resume.pdf" target="_blank"> VIEW MY RESUME </a></span></button>
       </div>
 
     </div><!--End of grid container-->
@@ -145,30 +148,35 @@
         <!-- The slideshow -->
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <div style="text-align:center; color: white;">
-              <h3>Informative Website</h3>
-            </div>
+
             <div class="flex-container-carousel">
-              <div style="flex-grow: 1; padding-left:90px; width:40%;">
+              <div style="flex-grow: 1; padding-left:100px; width:40%;">
+                <span style="color: white; font-size:1.3em;">Informative Website</span>
                 <p>This is an informative website I made about dead zones. The site includes one (1) index and three (3) subpages which are all linked. The goal of this project is to utilize all the CSS techniques we had learned, such as transitions and hover.</p>
                 <span id="codeHTML" class="badge badge-dark badge-pill"> HTML </span>
                 <span id="codeCSS" class="badge badge-dark badge-pill"> CSS </span>
+
+                <button id="openProj"><span><a href="https://alexxg98.github.io/Dead_Zones/"> SEE IT IN ACTION </a></span></button>
+                <button id="sourceCode"><span><a href="https://github.com/alexxg98/Dead_Zones"> SOURCE CODE </a></span></button>
               </div>
+
               <div style="flex-grow: 6;">
                 <img src="images/proj1Index.jpg" alt="Informative Site - Dead Zones">
               </div>
             </div>
           </div>
           <div class="carousel-item">
-            <div style="text-align:center; color: white;">
-              <h3>Hotel Availability</h3>
-            </div>
             <div class="flex-container-carousel">
-              <div style="flex-grow: 1; padding-left:90px; width:35%;">
+              <div style="flex-grow: 1; padding-left:100px; width:35%;">
+                <span style="color: white; font-size:1.3em;">Hotel Availability</span>
                 <p>This website consists of 10 (ten) users that randomly selects 1 (one) out of the four (four) available hotels. Using the selctions, the program will update the information about each hotels' rooms booked and still available.</p>
                 <span id="codeHTML" class="badge badge-dark badge-pill"> HTML </span>
                 <span id="codeCSS" class="badge badge-dark badge-pill"> CSS </span>
                 <span id="codeJavascript" class="badge badge-dark badge-pill"> JavaScript </span>
+
+                <button id="openProj"><span><a href="https://alexxg98.github.io/Hotel_Reservation/"> SEE IT IN ACTION </a></span></button>
+                <button id="sourceCode"><span><a href="https://github.com/alexxg98/Hotel_Reservation"> SOURCE CODE </a></span></button>
+
               </div>
               <div>
                 <img class="img-fluid" src="images/hotelProj.jpg" alt="Hotel Availability Project">
@@ -216,7 +224,8 @@
   <div id="icons" class="card-columns">
     <div class="card" id="github">
       <div class="card-header text-light">
-        <h5 class="card-title"> GitHub </h5> </div>
+        <h6 class="card-title"> GitHub </h6>
+      </div>
       <div class="card-body">
         <a href="https://github.com/alexxg98" target="_blank">
         <img class="card-img-bottom img-fluid" src="images/GitHubMark.png" id="githubIcon"> </a>
@@ -225,7 +234,8 @@
 
     <div class="card" id="linkedin">
       <div class="card-header text-light">
-        <h5 class="card-title"> Linkedin </h5> </div>
+        <h6 class="card-title"> Linkedin </h6>
+      </div>
       <div class="card-body">
         <a href="https://www.linkedin.com/in/alexandria-guo-724374136/" target="_blank">
         <img class="card-img-bottom img-fluid" src="images/linkedin.jpg" id="linkedinIcon"> </a>
@@ -234,7 +244,8 @@
 
     <div class="card" id="email">
       <div class="card-header text-light">
-        <h5 class="card-title"> Email </h5> </div>
+        <h6 class="card-title"> Email </h6>
+      </div>
       <div class="card-body">
         <!-- Button to Open the Modal -->
         <div data-toggle="modal" data-target="#myModal">

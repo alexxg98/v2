@@ -56,6 +56,13 @@ img{
   opacity: 0;
 }
 
+#downArrow{
+  width:2em;
+  height:auto;
+  margin:auto;
+  padding-top:2%;
+}
+
 
 /*About Me Page*/
 #about{
@@ -108,6 +115,10 @@ ul{
   width: auto;
   transition: all 0.5s;
   cursor: pointer;
+}
+#resume a{
+  text-decoration: none;
+  color: white;
 }
 #resume span {
   cursor: pointer;
@@ -304,7 +315,7 @@ span.moreInfoWork{
 
 
 #codeHTML{
-  box-shadow: 0.18em 0.18em 0.1em gray;
+  /* box-shadow: 0.18em 0.18em 0.1em gray; */
   font-size: 0.8em;
   color: white;
   margin: left;
@@ -312,7 +323,7 @@ span.moreInfoWork{
   padding: 0.8em;
 }
 #codeCSS{
-  box-shadow: 0.18em 0.18em 0.1em gray;
+  /* box-shadow: 0.18em 0.18em 0.1em gray; */
   font-size: 0.8em;
   color: white;
   float: left;
@@ -320,12 +331,49 @@ span.moreInfoWork{
   padding: 0.8em;
 }
 #codeJavascript{
-  box-shadow: 0.18em 0.18em 0.1em gray;
+  /* box-shadow: 0.18em 0.18em 0.1em gray; */
   font-size: 0.8em;
   color: white;
   float: left;
   margin-left: 3%;
   padding: 0.8em;
+}
+
+#openProj, #sourceCode{
+  display: inline-block;
+  background-color: inherit;
+  color: white;
+  border: none;
+  font-size: 1.1em;
+  width: auto;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin-top: 1.2em;
+}
+#openProj a, #sourceCode a{
+  text-decoration: none;
+  color: white;
+}
+#openProj span, #sourceCode span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+#openProj span:after, #sourceCode span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+#openProj:hover span, #sourceCode:hover span {
+  padding-right: 25px;
+}
+#openProj:hover span:after, #sourceCode:hover span:after {
+  opacity: 1;
+  right: 0;
 }
 
 .viewMore{
@@ -404,10 +452,11 @@ span.moreInfoWork{
 #copyrightBar{
   background-color: black;
   color: white;
-  font-size: 0.9em;
+  font-size: 1em;
   text-align: center;
   padding: 0.5em;
   width: 100%;
+  font-family: 'Cinzel', serif;
 }
 
 
