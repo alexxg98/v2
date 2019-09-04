@@ -376,6 +376,12 @@ span.moreInfoWork{
   right: 0;
 }
 
+/*Design Project Section*/
+.hoverJump:hover{
+  transform: translateY(-7px);
+  transition: 0.5s ease;
+}
+
 .viewMore{
   width: 100%;
   text-align: center;
