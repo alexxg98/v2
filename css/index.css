@@ -276,8 +276,6 @@ span.moreInfoWork{
   height: auto;
 }
 
-
-
 /*Projects Page*/
 /*
 #download{
@@ -483,20 +481,6 @@ span.moreInfoWork{
   margin-right: 1%;
 }
 
-.grid-container-about {
-  display: grid;
-  grid-column-gap: 10%;
-  padding: 10px;
-  margin-right: 10%;
-  grid-template-rows: auto auto;
-  grid-template-columns: 45% 55%;
-}
-.grid-item {
-  line-height: 1.5em;
-  padding-top: 1em;
-  text-align: left;
-  color: #8A8A8A;
-}
 .background {
   grid-column: 1/span 2;
   grid-row: 1;
@@ -508,6 +492,63 @@ span.moreInfoWork{
 .skills {
   grid-column: 2;
   grid-row: 2;
+}
+
+/*Work Page*/
+#workExp{
+  padding-left: 1em;
+  margin-left: 1%;
+  margin-right: 1%;
+}
+
+.flex-container {
+  flex-direction: column;
+}
+
+/* The actual timeline (the vertical ruler) */
+.timeline::after {
+  width: 2px;
+  left: 5%;
+}
+
+/* Container around content */
+.container-timeline {
+  padding: 10px 20px;
+  position: relative;
+  width: 90%;
+}
+
+/* The circles on the timeline */
+.container-timeline::after {
+  width: 15px;
+  height: 15px;
+  left: -7%;
+  border: 2px solid #d97f8d;
+}
+
+/* Place the container to the left */
+.left {
+  left: 10%;
+}
+
+/* Place the container to the right */
+.right {
+  left: 10%;
+}
+
+/* Change arrows to the left container (pointing left) */
+.left::before {
+  left: 10px;
+  border-width: 10px 10px 10px 0;
+  border-color: transparent white transparent transparent;
+}
+.right::before{
+  left: 10px;
+}
+
+/* Fix the circle for containers on the right side */
+.right::after {
+  left: -7%;
 }
 
 
