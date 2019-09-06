@@ -551,6 +551,13 @@ span.moreInfoWork{
   left: -7%;
 }
 
+span.moreInfoWork{
+  opacity: 1;
+}
+.content:hover span{
+  opacity: 1;
+}
+
 /*Projects Page*/
 #projects{
   padding-left: 1em;
