@@ -9,10 +9,6 @@ img{
   width: 100%;
   height: 100%;
 }
-#workExp a{
-  text-decoration: none;
-  color: #691F2B;
-}
 
 .sectionTitle{
   color: white;
@@ -25,29 +21,34 @@ img{
 
 #index{
   box-sizing: border-box;
-  height: 100vh;
+  width: 100%;
+  height: 90vh;
+  position: relative;
+  padding-top: 7vh;
 }
 
 #logo{
-  position: relative;
-  padding-top: 13vh;
-  height: auto;
-  width: 20%;
-  margin: auto;
+  position: absolute;
+  width: 100%;
+  height: 85vh;
 }
-
+#logoImage{
+  width: 20%;
+  height: auto;
+  margin-left: 41%;
+  padding-top: 25px;
+}
 #introText{
-  padding-left: 10%;
   top: 5em;
   position: absolute;
   opacity: 0;
   transition: 0.1s ease;
   box-sizing: border-box;
   height: 10em;
-  width: 300%;
-  margin-left: -100%;
   font-size: 1.5em;
   color: white;
+  width: 50%;
+  left: 25%;
 }
 
 #logo:hover #introText{
@@ -59,15 +60,16 @@ img{
 #downArrow{
   width:2em;
   height:auto;
-  margin:auto;
-  padding-top:2%;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
 }
 
 
 /*About Me Page*/
 #about{
   box-sizing: border-box;
-  padding-top: 5em;
+  padding-top: 2em;
   padding-left: 3em;
   margin-left: 10%;
   margin-right: 10%;
@@ -150,6 +152,11 @@ ul{
   margin-left: 10%;
   margin-right: 10%;
 }
+#workExp a{
+  text-decoration: none;
+  color: #691F2B;
+}
+
 .flex-container {
   display: flex;
   height: auto;
@@ -451,10 +458,62 @@ span.moreInfoWork{
   font-family: 'Cinzel', serif;
 }
 
-
-@media screen and (max-width:1300px) {
-#introText, #about, #skills, #projects, #contact{
-  padding-left: 7em;
+/*Smartphone View*/
+@media screen and (max-width:600px) {
+/*Index*/
+#logoImage{
   height: auto;
+  width: 40%;
+  margin-left: 35%;
+}
+/*Remove hover effect*/
+#introText{
+  display: none;
+}
+#logo:hover #logoImage{
+  opacity: 1;
+}
+
+/*About Me Page*/
+#about{
+  box-sizing: border-box;
+  padding-top: 3.5em;
+  padding-left: 1em;
+  margin-left: 1%;
+  margin-right: 1%;
+}
+
+.grid-container-about {
+  display: grid;
+  grid-column-gap: 10%;
+  padding: 10px;
+  margin-right: 10%;
+  grid-template-rows: auto auto;
+  grid-template-columns: 45% 55%;
+}
+.grid-item {
+  line-height: 1.5em;
+  padding-top: 1em;
+  text-align: left;
+  color: #8A8A8A;
+}
+.background {
+  grid-column: 1/span 2;
+  grid-row: 1;
+}
+.education {
+  grid-column: 1;
+  grid-row: 2;
+}
+.skills {
+  grid-column: 2;
+  grid-row: 2;
+}
+
+
+#upImg{
+  width: 2em;
+  height: 2em;
   }
+
 }
