@@ -1,7 +1,9 @@
 //scroll event
-window.onscroll = scrollToTop;
+window.onscroll = function(){
+  scrollToTop();
+}
 function scrollToTop() {
-  if (document.documentElement.scrollTop > 200) { //if doesnt work for browser, document.body.scrollTop > 100
+  if (document.documentElement.scrollTop > 500 || document.body.scrollTop > 500) {
     document.getElementById("topButton").style.display = "block"; //display the button after scrolling
   }
   else {
