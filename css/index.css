@@ -551,10 +551,55 @@ span.moreInfoWork{
   left: -7%;
 }
 
+/*Projects Page*/
+#projects{
+  padding-left: 1em;
+  margin-left: 1%;
+  margin-right: 1%;
+}
+
+.carousel-inner{
+    height: 625px;
+}
+.projCol{
+  margin-left: -30px;
+}
+
+#openProj, #sourceCode{
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+/*Design Project Section*/
+#designWork{
+  width: 96%;
+  margin-left: 1%;
+}
+
+/*Contact Me Page*/
+#contact{
+  padding-top: 0;
+  padding-left: 1em;
+  padding-right: 1em;
+  margin-left: 1%;
+  margin-right: 1%;
+  margin-top: 25%;
+  margin-bottom: 10%;
+  font-size: 1.2em;
+}
+#icons{
+  width: 95%;
+  margin-left: 3%;
+  margin-right: 2%;
+  margin-bottom: 15%;
+}
 
 #upImg{
   width: 2em;
   height: 2em;
   }
+#topButton{
+  bottom: 2em;
+}
 
 }
