@@ -4,53 +4,137 @@
   <title>Alexandria's Portfolio</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <<!-- Bootstrap and JavaScript -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
-  <link href="../css/index.css" type="text/css" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <link href="../css/wxe.css" type="text/css" rel="stylesheet">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Cinzel&display=swap" rel="stylesheet">
 </head>
 
 <body>
 <!--Navigation Bar-->
-  <nav class="navbar navbar-inverse">
-    <div class="container-fluid">
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-        <a class="navbar-brand" href="#">Alexandria Guo</a>
-      </div>
-      <div class="collapse navbar-collapse" id="myNavbar">
-        <ul class="nav navbar-nav navbar-right">
-          <li><a href="../index.html">Home</a></li>
-          <li><a href="../index.html#about">About Me</a></li>
-          <li><a href="../index.html#skills">Skills</a></li>
-          <li><a href="../index.html#projects">Projects</a></li>
-          <li><a href="../index.html#contact">Contact</a></li>
-        </ul>
-
-      </div>
+  <nav class="navbar navbar-expand-md navbar-dark fixed-top" style="background-color:black;">
+    <a class="navbar-brand" href="#">Alexandria Guo</a>
+    <!--collapse navbar on small screens-->
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-link"><a class="nav-link" href="#">Home</a></li>
+        <li class="nav-link"><a class="nav-link" href="#about">About Me</a></li>
+        <li class="nav-link"><a class="nav-link" href="#workExp">Experience</a></li>
+        <li class="nav-link"><a class="nav-link" href="#projects">Projects</a></li>
+        <li class="nav-link"><a class="nav-link" href="#contact">Contact</a></li>
+      </ul>
     </div>
   </nav>
 
-  <!-- Copyright Bar -->
-      <div id="copyrightBar"> Designed &amp; built by Alexandria Guo | 2019
+  <div id="title">
+    <p id="position">UI/UX Intern at WESTxEAST</p>
+    <p id="date">July 2019 - August 2019</p>
+  </div>
+
+  <div id="description">
+    <p><b>WESTxEAST</b> is a fashion startup that focuses on contemporary South Asian apparel. WESTxEAST was co-founded by Tania Chackumkal and Liya Samuel with their belief that silhouettes from India should be embraced globally. They provide affordable ready-made clothing, and a unique custom design process for all of your wardrobe needs.</p>
+    <div class="visitSite">
+      <button id="visitSite"> Visit Site </button>
+    </div>
+  </div>
+
+  <div class="grid-container">
+    <div class="grid-item title">
+      <h2 style="color: #691F2B;">MY ROLE</h2>
+    </div>
+    <div class="grid-item descp">
+      <h1>I helped redesign the homepage and the gallery page.</h1>
+    </div>
+
+    <div class="grid-item title">
+      <h3 style="color: #691F2B;">THE GOAL</h3>
+    </div>
+    <div class="grid-item descp">
+      <b>Homepage: </b>
+      <p>We knew that a typical user only spends a few minutes at most on a website, and mostly on the homepage. So I needed to make sure all the vital information about WESTxEAST's services are visible without craming too much in their at the same time.</p>
+      <b>Gallery: </b>
+      <p>The original gallery page was packed - full of client photos, which is great but it was unorganized. So I redesigned the page for a more organized and cleaner look.</p>
+    </div>
+
+    <div class="grid-item title">
+      <h3 style="color: #691F2B;">RESEARCH (HOMEPAGE)</h3>
+    </div>
+    <div class="grid-item descp">
+      <p>Before prototyping the site's redesign, I wanted to get a feel to how other bridal and fashion companies have organized their pages. While WESTxEAST already had some key elements that will grab a users' attention, the page needed more information. Since users do not spend much time on website, we need to make sure they know what WESTxEAST does and how; but most importantly get them interested in our service.</p>
+      <div class="grid-container-researchInner">
+        <div class="grid-item listTitle">What the page already had:</div>
+        <div class="grid-item listTitle">What I can add to the page:</div>
+        <div class="grid-item listDescp">
+          <ul>
+            <li>Video Header</li>
+            <li>Company Description</li>
+            <li>Links to Products</li>
+            <li>Press Quotes</li>
+          </ul>
+        </div>
+        <div class="grid-item listDescp">
+          <ul>
+            <li>Brief Overview of Process</li>
+            <li>Photos of Clients</li>
+            <li>Featured Testimonial</li>
+          </ul>
+        </div>
       </div>
+    </div>
+
+    <div class="grid-item prototype_front">
+      <h3 style="color: #691F2B;">PROTOYPE</h3>
+      <div class="row">
+        <div class="col-md-4 p-2">
+          <img class="img-fluid" src="../images/wxeProto1.JPG">
+        </div>
+        <div class="col-md-4 p-2">
+          <img class="img-fluid" src="../images/wxeProto2.JPG">
+        </div>
+        <div class="col-md-4 p-2">
+          <img class="img-fluid" src="../images/wxeProto3.JPG">
+        </div>
+      </div>
+    </div><!--Close prototype img-->
+
+    <div class="grid-item title">
+      <h3 style="color: #691F2B;">RESEARCH (GALLERY)</h3>
+    </div>
+    <div class="grid-item descp">
+      <p>The gallery, originally, was very open - all the client photos were on display. While this is great to showcase all the photos, it was unorganized and did not look uniform or professional (it was very pinterest-esque). After some research - looking at other site's gallery page - I thought that having a mini-gallery for each client was a good way to organize the photos and give the gallery page a cleaner look.</p>
+    </div>
+    <div class="grid-item prototype_gallery">
+      <h3 style="color: #691F2B;">PROTOYPE</h3>
+      <div class="row">
+        <div class="col-md-12 p-2">
+          <img class="img-fluid" src="../images/wxeProto4.JPG">
+        </div>
+      </div>
+    </div><!--Close prototype img-->
+
+  </div><!--Close grid container-->
+
+  <!-- Copyright Bar -->
+  <div id="copyrightBar">
+    Designed &amp; built by Alexandria Guo | 2019
+  </div>
 
 
 
   <!--Scroll to top button-->
-    <div id="topButton">
-      <a href="#"><img src="../images/upArrow.jpg" id="upImg"></a>
-    </div>
+  <div id="topButton">
+    <a href="#"><img src="../images/upArrow.jpg" id="upImg"></a>
+  </div>
 
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-
-  <script src="js/index.js"> </script>
-
-  </body>
-  </html>
+<script src="js/index.js"></script>
+</body>
+</html>
