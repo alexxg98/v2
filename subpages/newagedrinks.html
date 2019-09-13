@@ -4,53 +4,129 @@
   <title>Alexandria's Portfolio</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <<!-- Bootstrap and JavaScript -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
-  <link href="../css/index.css" type="text/css" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <link href="../css/workExp.css" type="text/css" rel="stylesheet">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Cinzel&display=swap" rel="stylesheet">
 </head>
 
 <body>
 <!--Navigation Bar-->
-  <nav class="navbar navbar-inverse">
-    <div class="container-fluid">
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-        <a class="navbar-brand" href="#">Alexandria Guo</a>
-      </div>
-      <div class="collapse navbar-collapse" id="myNavbar">
-        <ul class="nav navbar-nav navbar-right">
-          <li><a href="../index.html">Home</a></li>
-          <li><a href="../index.html#about">About Me</a></li>
-          <li><a href="../index.html#skills">Skills</a></li>
-          <li><a href="../index.html#projects">Projects</a></li>
-          <li><a href="../index.html#contact">Contact</a></li>
-        </ul>
-
-      </div>
+  <nav class="navbar navbar-expand-md navbar-dark fixed-top" style="background-color:black;">
+    <div id="backToHome">
+      <span>
+        <a class="navbar-brand" href="../index.html">BACK</a>
+      </span>
     </div>
+    <!--collapse navbar on small screens-->
+    <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-link"><a class="nav-link" href="#">Home</a></li>
+        <li class="nav-link"><a class="nav-link" href="#about">About Me</a></li>
+        <li class="nav-link"><a class="nav-link" href="#workExp">Experience</a></li>
+        <li class="nav-link"><a class="nav-link" href="#projects">Projects</a></li>
+        <li class="nav-link"><a class="nav-link" href="#contact">Contact</a></li>
+      </ul>
+    </div> -->
   </nav>
 
-  <!-- Copyright Bar -->
-      <div id="copyrightBar"> Designed &amp; built by Alexandria Guo | 2019
+  <div id="title">
+    <p id="position">Web Development Intern at New Age Drinks</p>
+    <p id="date">April 2019 - July 2019</p>
+  </div>
+
+  <div id="description">
+    <p><b>New Age Drinks</b> is a beverage startup whose mission is to create the first Smart Soda, BrainPOP that integrates health and productivity in a fun and tasteful way. New Age Drinks was founded by Sierra Hooshiari who is passionate about promoting healthy drinking after recovering from being hit by a drunk driver. BrainPOP is a healthier soda choice and a great alternative for the nightlife.</p>
+    <div class="visitSite">
+      <button id="visitSite"><a href="https://newagedrinks.com/"> Visit Site </a></button>
+    </div>
+  </div>
+
+  <div class="grid-container">
+    <div class="grid-item title">
+      <h2 style="color: #691F2B;">MY ROLE</h2>
+    </div>
+    <div class="grid-item descp">
+      <h1>I researched, wireframed, and implemented the site.</h1>
+    </div>
+
+    <div class="grid-item title">
+      <h3 style="color: #691F2B;">THE GOAL</h3>
+    </div>
+    <div class="grid-item descp">
+      <p>New Age Drinks was a fairly new startup - the goal was to build up the campaign and secure funds and interest in the company. As such, it was neccesary to make the site, especially the homepage to grab the user's attention (and email address).</p>
+    </div>
+
+    <div class="grid-item title">
+      <h3 style="color: #691F2B;">RESEARCH (HOMEPAGE)</h3>
+    </div>
+    <div class="grid-item descp">
+      <p>Before prototyping the site's redesign, I needed to research the best way to get user emails - Squeeze vs Splash vs Landing Page. I also looked at other beverage companies to see how their site is laid out, how much information is including in the homepage, and how they created interest to get users to sign up for emails. </p>
+    </div>
+
+    <div class="grid-item prototype">
+      <h3 style="color: #691F2B;">PROTOYPE</h3>
+      <div class="row">
+        <div class="col-md-6 p-2">
+          <img class="img-fluid" src="../images/nadProto1.jpg">
+        </div>
+        <div class="col-md-6 p-2">
+          <img class="img-fluid" src="../images/nadProto2.jpg">
+        </div>
+
       </div>
+    </div><!--Close prototype img-->
+
+    <div class="grid-item title">
+      <h3 style="color: #691F2B;">RESEARCH/TESTING</h3>
+    </div>
+    <div class="grid-item descp">
+      <p>After discussing the options, we deciding on implementing a splash page because it quickly prompts users to input their email addresses. This created a good visual and content for viewing while encouraging sign-ups.</p>
+      <p>Aside from the homepage, the product page was essential. According to the company's mission, it was important to make sure that this page conveys the healthy and the transparancy of the  ingredients in each of the product.</p>
+      <p>After designing and implementing the splash page, we internally tested the page. While it was a great way to ask for email addresses, it was not helpful in keeping user interest on the site - it felt more like a barrier. So after the testing, we went back to the other options and decided to forgo the splash page and only have one landing page. This became a much cleaner experience - all the information about the company, its products, and the campaign were all on one page which would help keep the user engagement.</p>
+      <p>Since the main focus was to get emails and interest in the product/campaign up, I kept looking at how other websites achieved this, keeping in mind how not to annoy users as well. From this research, I decided to add a few more email opt-in spaces to keep encouraging input.
+        <ol>
+          <li>Delayed pop-up. The user had some time viewing the page and may have gained some interest in the new company, so it becomes a little reminder to enter their email address.</li>
+          <li>Sticky bar. After some discussions, we felt that it would be benifitial to have a opt-in space that is static throughout a user's time on the site so they can easily input their email when they want to do so.</li>
+          <li>Scroll pop-up. From personal experience, email opt-ins that appear after scrolling down the page is the least intrusive in viewing experience but also the most likely place for input. Users have viewed/scrolled through the page and have gathered some interest in the product.</li>
+    </div>
+    <div class="grid-item finalImgs">
+      <div class="row">
+        <div class="col-md-12 p-2">
+          <img class="img-fluid" src="../images/nadFinal.JPG">
+        </div>
+        <div class="col-md-12 p-2">
+          <img class="img-fluid" src="../images/nadFinal1.JPG">
+        </div>
+        <div class="col-md-12 p-2">
+          <img class="img-fluid" src="../images/nadFinal2.JPG">
+        </div>
+      </div>
+    </div><!--Close prototype img-->
+
+  </div><!--Close grid container-->
+
+  <!-- Copyright Bar -->
+  <div id="copyrightBar">
+    Designed &amp; built by Alexandria Guo | 2019
+  </div>
 
 
 
   <!--Scroll to top button-->
-    <div id="topButton">
-      <a href="#"><img src="../images/upArrow.jpg" id="upImg"></a>
-    </div>
+  <div id="topButton">
+    <a href="#"><img src="../images/upArrow.jpg" id="upImg"></a>
+  </div>
 
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-
-  <script src="js/index.js"> </script>
-
-  </body>
-  </html>
+<script src="js/index.js"></script>
+</body>
+</html>

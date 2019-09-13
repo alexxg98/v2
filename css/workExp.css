@@ -12,6 +12,15 @@ img{
   height: 100%;
 }
 
+a{
+  text-decoration: none;
+  color: black;
+}
+a:hover{
+  text-decoration: none;
+  color: white;
+}
+
 #backToHome span:before{
   content: '\21FD';
   color: white;
@@ -53,7 +62,7 @@ img{
 .grid-container{
   display: grid;
   grid-column-gap: 5%;
-  grid-row-gap: 10%;
+  grid-row-gap: 5%;
   grid-template-rows: auto auto;
   grid-template-columns: 25% 65%;
   box-sizing: border-box;
@@ -78,9 +87,18 @@ img{
   /* border: solid purple; */
 }
 
-.prototype_front, .prototype_gallery{
+/*WESTxEAST*/
+.prototype_front, .prototype_gallery, .finalFrontGallery{
+  grid-column: 1 / span 2;
+  grid-row: 4, 6, 7;
+  margin-top: -8%;
+  /* border: solid blue; */
+}
+/*New Age Drinks*/
+.prototype, .finalImgs{
   grid-column: 1 / span 2;
   grid-row: 4, 6;
+  margin-top: -10%;
   /* border: solid blue; */
 }
 
@@ -116,5 +134,5 @@ img{
   width: 100%;
   font-family: 'Cinzel', serif;
   bottom: auto;
-  margin-top: 100%;
+  margin-top: 60%;
 }
