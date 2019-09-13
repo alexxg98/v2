@@ -4,7 +4,6 @@ body{
   font-size: 1em;
   position: relative;
   color: black;
-
 }
 
 img{
@@ -135,4 +134,37 @@ a:hover{
   font-family: 'Cinzel', serif;
   bottom: auto;
   margin-top: 60%;
+}
+
+
+/*Smartphone View*/
+@media screen and (max-width:600px){
+#description{
+  padding-left: 0;
+}
+
+.grid-container{
+  grid-column-gap: 5%;
+  grid-row-gap: 2%;
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: 10%;
+}
+
+.grid-container-researchInner{
+  display: grid;
+  grid-column-gap: 4%;
+  grid-template-rows: auto auto;
+  grid-template-columns: 43% 43%;
+  /* border: solid purple; */
+  }
+
+.research{
+  grid-column: 1 / span 2;
+  margin-top: -10%;
+}
+
+#copyrightBar{
+    margin-top: 105%;
+  }
 }
