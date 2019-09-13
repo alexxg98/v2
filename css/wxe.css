@@ -12,6 +12,11 @@ img{
   height: 100%;
 }
 
+#backToHome span:before{
+  content: '\21FD';
+  color: white;
+}
+
 #title{
   margin-top: 3em;
   text-align: center;
