@@ -402,6 +402,11 @@ span.moreInfoWork{
   margin-right: 25%;
   margin-bottom: 10%;
 }
+#emailModal{
+  width:50%;
+  top: 25%;
+  left: 25%;
+}
 
 #linkedinIcon, #emailIcon, #githubIcon{
   width: 5em;
@@ -600,9 +605,15 @@ span.moreInfoWork{
 }
 #icons{
   width: 95%;
-  margin-left: 3%;
+  /* margin-left: 3%; */
   margin-right: 2%;
   margin-bottom: 15%;
+  left: 20%;;
+}
+#emailModal{
+  width:75%;
+  top: 25%;
+  left: 12%;
 }
 
 #upImg{
@@ -610,7 +621,7 @@ span.moreInfoWork{
   height: 2em;
   }
 #topButton{
-  bottom: 2em;
+  bottom: 4em;
 }
 
 }
